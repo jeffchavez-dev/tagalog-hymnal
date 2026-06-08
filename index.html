@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Awit ng Pagpuri</title>
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#2d5a3d" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <style>
+    @font-face { font-family: 'DroidSerif'; src: url('fonts/droidSerif-Regular.ttf'); font-weight: 400; font-style: normal; }
+    @font-face { font-family: 'DroidSerif'; src: url('fonts/droidSerif-Bold.ttf'); font-weight: 700; font-style: normal; }
+    @font-face { font-family: 'DroidSerif'; src: url('fonts/droidSerif-Italic.ttf'); font-weight: 400; font-style: italic; }
+    @font-face { font-family: 'DroidSerif'; src: url('fonts/droidSerif-BoldItalic.ttf'); font-weight: 700; font-style: italic; }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body { overflow: hidden; height: 100%; }
+
+    :root {
+      --bg: #f0f7f2;
+      --surface: #fff;
+      --border: #c8ddd0;
+      --accent: #2d5a3d;
+      --accent-light: #4a8060;
+      --text: #142010;
+      --text-muted: #5a7a65;
+      --highlight: #dceee3;
+      --radius: 8px;
+    }
+
+    body {
+      font-family: 'DroidSerif', Georgia, serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 17px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── Header ── */
+    header {
+      background: var(--accent); color: #fff;
+      padding: 0 16px;
+      display: flex; align-items: center; gap: 12px;
+      height: 54px; position: sticky; top: 0; z-index: 100;
+      box-shadow: 0 2px 6px rgba(0,0,0,.25);
+    }
+    header h1 { font-size: 1.15rem; font-weight: 700; letter-spacing: .02em; flex: 1; }
+    .header-btn {
+      background: none; border: none; color: #fff; cursor: pointer;
+      font-size: 1.3rem; padding: 6px; border-radius: 4px; line-height: 1;
+      transition: background .15s;
+    }
+    .header-btn:hover { background: rgba(255,255,255,.15); }
+
+    /* ── Layout ── */
+    .app { display: flex; flex: 1; overflow: hidden; height: calc(100vh - 54px); }
+
+    /* ── Sidebar ── */
+    aside {
+      width: 320px; min-width: 260px;
+      background: var(--surface);
+      border-right: 1px solid var(--border);
+      display: flex; flex-direction: column;
+      overflow: hidden;
+      transition: width .2s, min-width .2s;
+    }
+    aside.collapsed { width: 0; min-width: 0; border-right: none; }
+
+    /* ── Sidebar tabs ── */
+    .sidebar-tabs {
+      display: flex; border-bottom: 1px solid var(--border); flex-shrink: 0;
+    }
+    .stab {
+      flex: 1; padding: 10px 4px; border: none; background: none;
+      font-family: inherit; font-size: .85rem; cursor: pointer;
+      color: var(--text-muted); border-bottom: 2px solid transparent;
+      transition: color .15s, border-color .15s;
+    }
+    .stab.active { color: var(--accent); border-bottom-color: var(--accent); font-weight: 700; }
+
+    /* ── Panels ── */
+    .panel { display: flex; flex-direction: column; flex: 1; overflow: hidden; }
+    .panel.hidden { display: none; }
+
+    /* ── Hymns panel ── */
+    .sidebar-top { padding: 12px; border-bottom: 1px solid var(--border); display: flex; flex-direction: column; gap: 8px; flex-shrink: 0; }
+    .search-row { display: flex; gap: 6px; }
+    .search-row input {
+      flex: 1; padding: 7px 10px; border: 1px solid var(--border);
+      border-radius: var(--radius); font-family: inherit; font-size: .9rem;
+      background: var(--bg); color: var(--text); outline: none;
+    }
+    .search-row input:focus { border-color: var(--accent-light); }
+    .search-row button {
+      padding: 7px 10px; border: 1px solid var(--border);
+      border-radius: var(--radius); background: var(--bg); cursor: pointer;
+      font-size: .85rem; color: var(--text-muted);
+    }
+    .search-row button:hover { background: var(--highlight); }
+
+    /* ── Edit banner ── */
+    .edit-banner {
+      display: none; padding: 8px 12px;
+      background: var(--highlight); border-bottom: 1px solid var(--border);
+      font-size: .82rem; gap: 6px; align-items: center; flex-shrink: 0;
+    }
+    .edit-banner.visible { display: flex; }
+    .edit-banner span { flex: 1; color: var(--accent); font-weight: 700; }
+    .edit-banner button {
+      padding: 4px 10px; border-radius: var(--radius); border: 1px solid var(--border);
+      font-family: inherit; font-size: .78rem; cursor: pointer; background: var(--surface);
+    }
+    .edit-banner .save-btn { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+    /* ── Hymn list ── */
+    .hymn-list { overflow-y: auto; flex: 1; overscroll-behavior: contain; }
+
+    .section-header {
+      padding: 6px 14px 4px;
+      font-size: .72rem; font-weight: 700; letter-spacing: .06em;
+      text-transform: uppercase; color: var(--accent);
+      background: var(--highlight);
+      border-bottom: 1px solid var(--border);
+      border-top: 1px solid var(--border);
+    }
+
+    .hymn-item {
+      padding: 10px 14px; border-bottom: 1px solid var(--border);
+      cursor: pointer; display: flex; align-items: center; gap: 8px;
+      transition: background .1s;
+    }
+    .hymn-item:hover { background: var(--highlight); }
+    .hymn-item.active { background: var(--highlight); border-left: 3px solid var(--accent); padding-left: 11px; }
+    .hymn-item.bookmarked .hymn-num::after { content: ' ★'; color: goldenrod; }
+    .hymn-num { font-size: .8rem; color: var(--text-muted); min-width: 32px; font-weight: 700; flex-shrink: 0; }
+    .hymn-title { font-size: .9rem; line-height: 1.35; flex: 1; }
+    .pl-badge {
+      min-width: 20px; height: 20px; border-radius: 50%;
+      background: var(--border); color: var(--text-muted);
+      font-size: .7rem; font-weight: 700; line-height: 20px;
+      text-align: center; flex-shrink: 0; display: none;
+    }
+    .editing-mode .pl-badge { display: block; }
+    .editing-mode .hymn-item.in-edit { background: var(--highlight); }
+    .editing-mode .hymn-item.in-edit .pl-badge { background: var(--accent); color: #fff; }
+
+    /* ── Now-playing bar ── */
+    .now-playing-bar {
+      display: none; padding: 8px 12px;
+      background: var(--accent); color: #fff;
+      font-size: .8rem; align-items: center; gap: 8px; flex-shrink: 0;
+    }
+    .now-playing-bar.visible { display: flex; }
+    .now-playing-bar span { flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .now-playing-bar button {
+      background: rgba(255,255,255,.2); border: none; color: #fff;
+      padding: 3px 8px; border-radius: 4px; cursor: pointer; font-family: inherit; font-size: .75rem;
+    }
+    .hymn-item.playing-now { border-left: 3px solid var(--accent); padding-left: 11px; background: var(--highlight); }
+    .hymn-item.no-audio-item .hymn-num { opacity: .45; }
+    .hymn-item.no-audio-item .hymn-title { opacity: .45; }
+
+    /* ── No results ── */
+    .no-results { padding: 20px; text-align: center; color: var(--text-muted); font-style: italic; }
+
+    /* ── Playlists panel ── */
+    .playlists-header {
+      padding: 12px; border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; gap: 8px; flex-shrink: 0;
+    }
+    .playlists-header h3 { flex: 1; font-size: .9rem; color: var(--text-muted); font-weight: 400; }
+    .new-pl-btn {
+      padding: 6px 12px; border-radius: var(--radius);
+      background: var(--accent); color: #fff; border: none;
+      font-family: inherit; font-size: .82rem; cursor: pointer;
+    }
+    .playlists-list { overflow-y: auto; flex: 1; overscroll-behavior: contain; }
+    .pl-item {
+      padding: 12px 14px; border-bottom: 1px solid var(--border);
+      display: flex; flex-direction: column; gap: 6px;
+    }
+    .pl-item-top { display: flex; align-items: center; gap: 8px; }
+    .pl-item-name { flex: 1; font-size: .95rem; font-weight: 700; }
+    .pl-item-meta { font-size: .78rem; color: var(--text-muted); }
+    .pl-item-actions { display: flex; gap: 6px; }
+    .pl-item-actions button {
+      padding: 4px 10px; border-radius: var(--radius);
+      border: 1px solid var(--border); font-family: inherit;
+      font-size: .78rem; cursor: pointer; background: var(--bg); color: var(--text);
+    }
+    .pl-item-actions .pl-play { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .pl-item-actions .pl-play:disabled { opacity: .4; cursor: default; }
+    .pl-item-actions .pl-delete { color: #c0392b; border-color: #e0b0a8; }
+    .pl-empty { padding: 32px 20px; text-align: center; color: var(--text-muted); font-style: italic; font-size: .9rem; }
+
+    /* ── Main viewer ── */
+    main {
+      flex: 1; min-width: 0;
+      overflow-x: hidden; overflow-y: auto;
+      padding: 28px 32px 60px;
+    }
+    #hymnView { max-width: 620px; margin: 0 auto; }
+    .empty-state {
+      display: flex; flex-direction: column; align-items: center;
+      justify-content: center; height: 100%; color: var(--text-muted);
+      gap: 12px; text-align: center;
+    }
+    .empty-state .icon { font-size: 3rem; }
+    .hymn-header { margin-bottom: 20px; }
+    .hymn-header .number { font-size: .85rem; color: var(--text-muted); margin-bottom: 4px; }
+    .hymn-header h2 { font-size: 1.4rem; line-height: 1.3; }
+    .hymn-header .tune-badge {
+      display: inline-block; margin-top: 6px;
+      font-size: .72rem; font-style: italic; padding: 2px 8px;
+      border-radius: 20px; background: var(--highlight); color: var(--accent);
+      border: 1px solid var(--border);
+    }
+    .hymn-header .section-badge {
+      display: inline-block; margin-top: 4px; margin-left: 4px;
+      font-size: .68rem; font-style: normal; padding: 2px 8px;
+      border-radius: 20px; background: var(--border); color: var(--text-muted);
+      border: 1px solid var(--border);
+    }
+    .hymn-body { white-space: pre-wrap; line-height: 1.85; letter-spacing: .01em; }
+    .hymn-body .stanza { margin-bottom: 1.4em; }
+
+    .viewer-toolbar {
+      display: flex; gap: 8px; align-items: center; margin-bottom: 18px; flex-wrap: wrap;
+    }
+    .viewer-toolbar button {
+      padding: 5px 12px; border: 1px solid var(--border);
+      border-radius: var(--radius); background: var(--surface);
+      cursor: pointer; font-family: inherit; font-size: .85rem;
+      color: var(--text); transition: background .15s;
+    }
+    .viewer-toolbar button:hover { background: var(--highlight); }
+    .font-ctrl { display: flex; align-items: center; gap: 4px; margin-left: auto; }
+    .font-ctrl button { padding: 5px 10px; font-size: .9rem; font-weight: 700; }
+
+    /* ── MIDI player bar ── */
+    .player-bar {
+      position: fixed; bottom: 0; left: 0; right: 0;
+      background: var(--accent); color: #fff;
+      padding: 8px 20px;
+      display: flex; align-items: center; gap: 12px;
+      font-size: .85rem;
+      transform: translateY(100%); transition: transform .25s;
+      z-index: 50;
+    }
+    .player-bar.visible { transform: translateY(0); }
+    .player-bar .play-btn {
+      background: rgba(255,255,255,.2); border: none; color: #fff;
+      border-radius: 50%; width: 36px; height: 36px; cursor: pointer;
+      font-size: 1.1rem; display: flex; align-items: center; justify-content: center;
+      transition: background .15s;
+    }
+    .player-bar .play-btn:hover { background: rgba(255,255,255,.35); }
+    .player-title { flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .player-pos { font-size: .75rem; opacity: .75; white-space: nowrap; }
+    .player-close { background: none; border: none; color: rgba(255,255,255,.7); cursor: pointer; font-size: 1.2rem; }
+
+    /* ── Responsive ── */
+    @media (max-width: 640px) {
+      aside { width: 100%; position: absolute; top: 54px; bottom: 0; z-index: 90; }
+      aside.collapsed { width: 0; overflow: hidden; }
+      main { padding: 16px 16px 80px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <button class="header-btn" id="sidebarToggle" title="Toggle list">☰</button>
+  <h1>Awit ng Pagpuri</h1>
+  <button class="header-btn" id="bookmarkBtn" title="Bookmark" style="display:none">☆</button>
+</header>
+
+<div class="app">
+  <aside id="sidebar">
+
+    <div class="sidebar-tabs">
+      <button class="stab active" id="tabHymns">Awit</button>
+      <button class="stab" id="tabPlaylists">Playlists</button>
+    </div>
+
+    <!-- ── Hymns Panel ── -->
+    <div class="panel" id="hymnsPanel">
+      <div class="sidebar-top">
+        <div class="search-row">
+          <input type="search" id="searchInput" placeholder="Hanapin o #bilang…" autocomplete="off" />
+          <button id="clearSearch">✕</button>
+        </div>
+      </div>
+      <div class="now-playing-bar" id="nowPlayingBar">
+        <span id="nowPlayingLabel">♪ Playlist</span>
+        <button id="exitPlaylistViewBtn">✕ Exit</button>
+      </div>
+      <div class="edit-banner" id="editBanner">
+        <span id="editBannerLabel">Editing playlist</span>
+        <button id="cancelEditBtn">Cancel</button>
+        <button class="save-btn" id="saveEditBtn">Save</button>
+      </div>
+      <div class="hymn-list" id="hymnList"></div>
+    </div>
+
+    <!-- ── Playlists Panel ── -->
+    <div class="panel hidden" id="playlistsPanel">
+      <div class="playlists-header">
+        <h3>Aking mga Playlist</h3>
+        <button class="new-pl-btn" id="newPlaylistBtn">+ Bago</button>
+      </div>
+      <div class="playlists-list" id="playlistsList"></div>
+    </div>
+
+  </aside>
+
+  <main id="mainContent">
+    <div class="empty-state" id="emptyState">
+      <div class="icon">♪</div>
+      <div>Pumili ng awit upang basahin</div>
+    </div>
+    <div id="hymnView" style="display:none">
+      <div class="viewer-toolbar">
+        <button id="prevHymn" title="Nakaraan">←</button>
+        <button id="nextHymn" title="Susunod">→</button>
+        <button id="playBtn" title="I-play" style="display:none">▶</button>
+        <div class="font-ctrl">
+          <button id="fontDec" title="Paliitin">A−</button>
+          <button id="fontInc" title="Palakihin">A+</button>
+        </div>
+      </div>
+      <div class="hymn-header">
+        <div class="number" id="hymnNumber"></div>
+        <h2 id="hymnTitle"></h2>
+        <em class="tune-badge" id="hymnTune"></em>
+        <span class="section-badge" id="hymnSection"></span>
+      </div>
+      <div class="hymn-body" id="hymnBody"></div>
+    </div>
+  </main>
+</div>
+
+<div class="player-bar" id="playerBar">
+  <button class="play-btn" id="playerPlayPause">▶</button>
+  <span class="player-title" id="playerTitle">—</span>
+  <span class="player-pos" id="playerPos"></span>
+  <button class="player-close" id="playerClose">✕</button>
+</div>
+
+<script>
+'use strict';
+
+// ── State ─────────────────────────────────────────────────────────────
+var allHymns = [];
+var currentIndex = null;
+var filteredList = [];
+var fontSize = parseInt(localStorage.getItem('awit_fontSize') || '17');
+var bookmarks = JSON.parse(localStorage.getItem('awit_bookmarks') || '{}');
+
+// ── Playlists ─────────────────────────────────────────────────────────
+var savedPlaylists = JSON.parse(localStorage.getItem('awit_playlists') || '[]');
+var editingPlaylist = null;
+var editHymns = [];
+var activePlayPos = -1;
+var activePlayList = null;
+var activeAudioList = null;
+
+function savePlaylists() {
+  localStorage.setItem('awit_playlists', JSON.stringify(savedPlaylists));
+}
+
+function hasAudio(h) { return !!(h.midi_id); }
+
+function hymnKey(h) { return 'awit:' + h.id; }
+
+function hymnByKey(key) {
+  var id = key.split(':')[1];
+  for (var i = 0; i < allHymns.length; i++) {
+    if (allHymns[i].id === id) return allHymns[i];
+  }
+  return null;
+}
+
+// ── Boot ──────────────────────────────────────────────────────────────
+(function() {
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'awit-hymnal.json', true);
+  xhr.onload = function() {
+    var data = JSON.parse(xhr.responseText);
+    allHymns = data.awit.sort(function(a, b) {
+      return parseInt(a.id) - parseInt(b.id);
+    });
+    applyFontSize();
+    renderList();
+  };
+  xhr.send();
+}());
+
+// ── Sidebar toggle ────────────────────────────────────────────────────
+document.getElementById('sidebarToggle').addEventListener('click', function() {
+  document.getElementById('sidebar').classList.toggle('collapsed');
+});
+
+// ── Tab switching ─────────────────────────────────────────────────────
+document.getElementById('tabHymns').addEventListener('click', function() {
+  document.getElementById('tabHymns').classList.add('active');
+  document.getElementById('tabPlaylists').classList.remove('active');
+  document.getElementById('hymnsPanel').classList.remove('hidden');
+  document.getElementById('playlistsPanel').classList.add('hidden');
+});
+
+document.getElementById('tabPlaylists').addEventListener('click', function() {
+  document.getElementById('tabPlaylists').classList.add('active');
+  document.getElementById('tabHymns').classList.remove('active');
+  document.getElementById('playlistsPanel').classList.remove('hidden');
+  document.getElementById('hymnsPanel').classList.add('hidden');
+  renderPlaylists();
+});
+
+function each(nodeList, fn) {
+  Array.prototype.forEach.call(nodeList, fn);
+}
+
+// ── Playlists CRUD ────────────────────────────────────────────────────
+function renderPlaylists() {
+  var container = document.getElementById('playlistsList');
+  if (savedPlaylists.length === 0) {
+    container.innerHTML = '<div class="pl-empty">Wala pang playlist.<br>I-tap ang "+ Bago" para gumawa.</div>';
+    return;
+  }
+
+  container.innerHTML = savedPlaylists.map(function(pl, idx) {
+    var count = pl.hymns.length;
+    var audioCount = 0;
+    for (var i = 0; i < pl.hymns.length; i++) {
+      var h = hymnByKey(pl.hymns[i]);
+      if (h && hasAudio(h)) audioCount++;
+    }
+    var noAudio = audioCount === 0;
+    return '<div class="pl-item" data-idx="' + idx + '">' +
+      '<div class="pl-item-top">' +
+        '<span class="pl-item-name">' + escHtml(pl.name) + '</span>' +
+      '</div>' +
+      '<div class="pl-item-meta">' + count + ' awit' +
+        (audioCount < count ? ' · ' + audioCount + ' may musika' : '') + '</div>' +
+      '<div class="pl-item-actions">' +
+        '<button class="pl-play" data-idx="' + idx + '"' + (noAudio ? ' disabled' : '') + '>▶ I-play</button>' +
+        '<button class="pl-edit" data-idx="' + idx + '">✎ I-edit</button>' +
+        '<button class="pl-delete" data-idx="' + idx + '">🗑</button>' +
+      '</div>' +
+    '</div>';
+  }).join('');
+
+  each(container.querySelectorAll('.pl-play'), function(btn) {
+    btn.addEventListener('click', function() {
+      var pl = savedPlaylists[parseInt(btn.dataset.idx)];
+      unlockAudio();
+      startPlaylistPlayback(pl);
+    });
+  });
+  each(container.querySelectorAll('.pl-edit'), function(btn) {
+    btn.addEventListener('click', function() {
+      startEditPlaylist(parseInt(btn.dataset.idx));
+    });
+  });
+  each(container.querySelectorAll('.pl-delete'), function(btn) {
+    btn.addEventListener('click', function() {
+      var pl = savedPlaylists[parseInt(btn.dataset.idx)];
+      if (confirm('Burahin ang "' + pl.name + '"?')) {
+        savedPlaylists.splice(parseInt(btn.dataset.idx), 1);
+        savePlaylists();
+        renderPlaylists();
+      }
+    });
+  });
+}
+
+document.getElementById('newPlaylistBtn').addEventListener('click', function() {
+  var name = prompt('Pangalan ng playlist:');
+  if (!name || !name.trim()) return;
+  var pl = { id: 'pl_' + Date.now(), name: name.trim(), hymns: [] };
+  savedPlaylists.push(pl);
+  savePlaylists();
+  startEditPlaylist(savedPlaylists.length - 1);
+});
+
+function startEditPlaylist(idx) {
+  editingPlaylist = savedPlaylists[idx];
+  editHymns = editingPlaylist.hymns.slice();
+  document.getElementById('tabHymns').classList.add('active');
+  document.getElementById('tabPlaylists').classList.remove('active');
+  document.getElementById('hymnsPanel').classList.remove('hidden');
+  document.getElementById('playlistsPanel').classList.add('hidden');
+  document.getElementById('editBannerLabel').textContent = 'Ini-edit: ' + editingPlaylist.name;
+  document.getElementById('editBanner').classList.add('visible');
+  document.getElementById('hymnList').classList.add('editing-mode');
+  renderList();
+}
+
+function stopEditPlaylist() {
+  editingPlaylist = null;
+  editHymns = [];
+  document.getElementById('editBanner').classList.remove('visible');
+  document.getElementById('hymnList').classList.remove('editing-mode');
+  renderList();
+}
+
+document.getElementById('cancelEditBtn').addEventListener('click', stopEditPlaylist);
+
+document.getElementById('saveEditBtn').addEventListener('click', function() {
+  if (editingPlaylist) {
+    editingPlaylist.hymns = editHymns.slice();
+    savePlaylists();
+  }
+  stopEditPlaylist();
+  document.getElementById('tabPlaylists').classList.add('active');
+  document.getElementById('tabHymns').classList.remove('active');
+  document.getElementById('playlistsPanel').classList.remove('hidden');
+  document.getElementById('hymnsPanel').classList.add('hidden');
+  renderPlaylists();
+});
+
+// ── Playlist playback ─────────────────────────────────────────────────
+function showHymnsView() {
+  document.getElementById('tabHymns').classList.add('active');
+  document.getElementById('tabPlaylists').classList.remove('active');
+  document.getElementById('hymnsPanel').classList.remove('hidden');
+  document.getElementById('playlistsPanel').classList.add('hidden');
+  document.getElementById('sidebar').classList.add('collapsed');
+}
+
+function startPlaylistPlayback(pl) {
+  var fullList = [];
+  for (var i = 0; i < pl.hymns.length; i++) {
+    var h = hymnByKey(pl.hymns[i]);
+    if (h) fullList.push(h);
+  }
+  var audioList = fullList.filter(hasAudio);
+  if (audioList.length === 0) return;
+  activePlayList = fullList;
+  activeAudioList = audioList;
+  showHymnsView();
+  filteredList = activePlayList;
+  document.getElementById('nowPlayingLabel').textContent = '♪ ' + pl.name;
+  document.getElementById('nowPlayingBar').classList.add('visible');
+  document.getElementById('sidebar').classList.remove('collapsed');
+  renderList();
+  activePlayPos = 0;
+  playPlaylistItem(0, activeAudioList);
+}
+
+function exitPlaylistView() {
+  activePlayList = null;
+  activeAudioList = null;
+  activePlayPos = -1;
+  document.getElementById('nowPlayingBar').classList.remove('visible');
+  filteredList = allHymns;
+  renderList();
+}
+
+document.getElementById('exitPlaylistViewBtn').addEventListener('click', function() {
+  stopMidi(true);
+});
+
+function playPlaylistItem(pos, list) {
+  var hymn = list[pos];
+  if (!hymn) return;
+  filteredList = activePlayList || allHymns;
+  var idx = filteredList.indexOf(hymn);
+  currentIndex = idx;
+  renderList();
+  selectHymn(idx);
+  var midiPath = 'midi/' + hymn.midi_collection + '_h' + hymn.midi_id + '.mid';
+  document.getElementById('playerPos').textContent = (pos + 1) + ' / ' + list.length;
+  loadMidi(midiPath, hymn.title, function() {
+    if (pos + 1 < list.length) {
+      activePlayPos = pos + 1;
+      playPlaylistItem(activePlayPos, list);
+    } else {
+      document.getElementById('playerPos').textContent = '';
+      activePlayPos = -1;
+      exitPlaylistView();
+    }
+  });
+}
+
+// ── Search ────────────────────────────────────────────────────────────
+var searchInput = document.getElementById('searchInput');
+searchInput.addEventListener('input', renderList);
+document.getElementById('clearSearch').addEventListener('click', function() {
+  searchInput.value = ''; renderList();
+});
+
+function normalize(str) {
+  return str.replace(/[^\w\s]/g, '').toLowerCase();
+}
+
+function renderList() {
+  var query = searchInput.value.trim();
+  var list = document.getElementById('hymnList');
+  var source = (activePlayList && activePlayList.length > 0) ? activePlayList : allHymns;
+  var isFiltered = false;
+
+  if (!activePlayList && query) {
+    var numQuery = query.replace(/^#/, '');
+    var isNumSearch = /^\d+$/.test(numQuery);
+    if (isNumSearch) {
+      source = source.filter(function(h) {
+        return h.id === numQuery || h.id.indexOf(numQuery) === 0;
+      });
+    } else {
+      var q = normalize(query);
+      source = source.filter(function(h) {
+        return normalize(h.title).indexOf(q) !== -1 ||
+               normalize(h.firstLine).indexOf(q) !== -1 ||
+               normalize(h.text).indexOf(q) !== -1 ||
+               (h.english_tune && normalize(h.english_tune).indexOf(q) !== -1);
+      });
+    }
+    isFiltered = true;
+  }
+
+  filteredList = source;
+
+  if (source.length === 0) {
+    list.innerHTML = '<div class="no-results">Walang nahanap na awit</div>';
+    return;
+  }
+
+  var playingHymn = (activeAudioList && activePlayPos >= 0) ? activeAudioList[activePlayPos] : null;
+  var html = '';
+  var lastSection = null;
+
+  for (var i = 0; i < source.length; i++) {
+    var h = source[i];
+    var key = hymnKey(h);
+    var isActive = currentIndex !== null && filteredList[currentIndex] === h;
+    var isPlayingNow = h === playingHymn;
+    var isBookmarked = bookmarks[key];
+    var editIdx = editingPlaylist ? editHymns.indexOf(key) : -1;
+    var inEdit = editIdx !== -1;
+    var badge = inEdit ? (editIdx + 1) : '';
+    var noAudio = activePlayList && !hasAudio(h);
+
+    // Section divider (only when not filtering)
+    if (!isFiltered && h.section && h.section !== lastSection) {
+      html += '<div class="section-header">' + escHtml(h.section) + '</div>';
+      lastSection = h.section;
+    }
+
+    html += '<div class="hymn-item' +
+      (isActive ? ' active' : '') +
+      (isPlayingNow ? ' playing-now' : '') +
+      (isBookmarked ? ' bookmarked' : '') +
+      (inEdit ? ' in-edit' : '') +
+      (noAudio ? ' no-audio-item' : '') +
+      '" data-idx="' + i + '">' +
+      '<span class="hymn-num">#' + h.id + (isPlayingNow ? ' ♪' : '') + '</span>' +
+      '<span class="hymn-title">' + escHtml(h.title) + '</span>' +
+      '<span class="pl-badge">' + badge + '</span>' +
+      '</div>';
+  }
+
+  list.innerHTML = html;
+
+  each(list.querySelectorAll('.hymn-item'), function(el) {
+    el.addEventListener('click', function() {
+      var idx = parseInt(el.dataset.idx);
+      if (editingPlaylist) {
+        var hymn = filteredList[idx];
+        var k = hymnKey(hymn);
+        var pos = editHymns.indexOf(k);
+        if (pos === -1) editHymns.push(k);
+        else editHymns.splice(pos, 1);
+        renderList();
+      } else if (activePlayList) {
+        var hymn = filteredList[idx];
+        var audioIdx = activeAudioList ? activeAudioList.indexOf(hymn) : -1;
+        if (audioIdx !== -1) {
+          unlockAudio();
+          activePlayPos = audioIdx;
+          playPlaylistItem(audioIdx, activeAudioList);
+        } else {
+          selectHymn(idx);
+        }
+        if (window.innerWidth <= 640) {
+          document.getElementById('sidebar').classList.add('collapsed');
+        }
+      } else {
+        selectHymn(idx);
+        if (window.innerWidth <= 640) {
+          document.getElementById('sidebar').classList.add('collapsed');
+        }
+      }
+    });
+  });
+}
+
+// ── Hymn viewer ───────────────────────────────────────────────────────
+function selectHymn(idx) {
+  currentIndex = idx;
+  var hymn = filteredList[idx];
+  if (!hymn) return;
+
+  document.getElementById('emptyState').style.display = 'none';
+  document.getElementById('hymnView').style.display = 'block';
+  document.getElementById('hymnNumber').textContent = 'Awit Blg. ' + hymn.id;
+  document.getElementById('hymnTitle').textContent = hymn.title;
+
+  var tuneEl = document.getElementById('hymnTune');
+  if (hymn.english_tune) {
+    tuneEl.textContent = hymn.english_tune;
+    tuneEl.style.display = '';
+  } else {
+    tuneEl.style.display = 'none';
+  }
+
+  var secEl = document.getElementById('hymnSection');
+  if (hymn.section) {
+    secEl.textContent = hymn.section;
+    secEl.style.display = '';
+  } else {
+    secEl.style.display = 'none';
+  }
+
+  document.getElementById('hymnBody').innerHTML = formatLyrics(hymn.text);
+
+  var bkBtn = document.getElementById('bookmarkBtn');
+  bkBtn.style.display = '';
+  updateBookmarkBtn(hymn);
+
+  var playBtn = document.getElementById('playBtn');
+  playBtn.style.display = hasAudio(hymn) ? '' : 'none';
+  playBtn.textContent = '▶';
+
+  document.getElementById('mainContent').scrollTop = 0;
+  renderList();
+}
+
+function formatLyrics(text) {
+  return text.split(/\n\n+/).map(function(stanza) {
+    return '<div class="stanza">' + escHtml(stanza) + '</div>';
+  }).join('');
+}
+
+function escHtml(s) {
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+// ── Prev / Next ───────────────────────────────────────────────────────
+document.getElementById('prevHymn').addEventListener('click', function() {
+  if (currentIndex > 0) selectHymn(currentIndex - 1);
+});
+document.getElementById('nextHymn').addEventListener('click', function() {
+  if (currentIndex < filteredList.length - 1) selectHymn(currentIndex + 1);
+});
+
+// ── Bookmarks ─────────────────────────────────────────────────────────
+document.getElementById('bookmarkBtn').addEventListener('click', function() {
+  var hymn = filteredList[currentIndex];
+  if (!hymn) return;
+  var key = hymnKey(hymn);
+  if (bookmarks[key]) delete bookmarks[key];
+  else bookmarks[key] = true;
+  localStorage.setItem('awit_bookmarks', JSON.stringify(bookmarks));
+  updateBookmarkBtn(hymn);
+  renderList();
+});
+
+function updateBookmarkBtn(hymn) {
+  var key = hymnKey(hymn);
+  document.getElementById('bookmarkBtn').textContent = bookmarks[key] ? '★' : '☆';
+  document.getElementById('bookmarkBtn').title = bookmarks[key] ? 'Alisin ang bookmark' : 'I-bookmark';
+}
+
+// ── Font size ─────────────────────────────────────────────────────────
+function applyFontSize() {
+  document.body.style.fontSize = fontSize + 'px';
+}
+document.getElementById('fontInc').addEventListener('click', function() {
+  fontSize = Math.min(fontSize + 1, 28); applyFontSize(); localStorage.setItem('awit_fontSize', fontSize);
+});
+document.getElementById('fontDec').addEventListener('click', function() {
+  fontSize = Math.max(fontSize - 1, 12); applyFontSize(); localStorage.setItem('awit_fontSize', fontSize);
+});
+
+// ── MIDI playback ─────────────────────────────────────────────────────
+var midiPlayerLib = null;
+var audioContext = null;
+var instrument = null;
+var isPlaying = false;
+
+function getIOSVersion() {
+  var ua = navigator.userAgent;
+  if (!/iPhone|iPad|iPod/.test(ua)) return null;
+  var m = ua.match(/OS (\d+)_/);
+  return m ? parseInt(m[1]) : null;
+}
+var iosVer = getIOSVersion();
+var USE_MANIFEST = (iosVer === null || iosVer >= 12);
+
+function getAudioContext() {
+  if (!audioContext) audioContext = new (window.AudioContext || window.webkitAudioContext)();
+  return audioContext;
+}
+
+function unlockAudio() {
+  var ctx = getAudioContext();
+  if (ctx.state === 'suspended') ctx.resume();
+  var buf = ctx.createBuffer(1,1,22050);
+  var src = ctx.createBufferSource();
+  src.buffer = buf; src.connect(ctx.destination); src.start(0);
+}
+
+document.getElementById('playBtn').addEventListener('click', function() {
+  var hymn = filteredList[currentIndex];
+  if (!hymn || !hasAudio(hymn)) return;
+  unlockAudio();
+  if (isPlaying) {
+    stopMidi(false);
+    document.getElementById('playBtn').textContent = '▶';
+    return;
+  }
+  var midiPath = 'midi/' + hymn.midi_collection + '_h' + hymn.midi_id + '.mid';
+  document.getElementById('playBtn').textContent = '■';
+  loadMidi(midiPath, hymn.title, function() {
+    document.getElementById('playBtn').textContent = '▶';
+  });
+});
+
+document.getElementById('playerPlayPause').addEventListener('click', function() {
+  if (!midiPlayerLib) return;
+  if (isPlaying) {
+    midiPlayerLib.pause();
+    isPlaying = false;
+    document.getElementById('playerPlayPause').textContent = '▶';
+  } else {
+    midiPlayerLib.play();
+    isPlaying = true;
+    document.getElementById('playerPlayPause').textContent = '⏸';
+  }
+});
+
+document.getElementById('playerClose').addEventListener('click', function() {
+  stopMidi(false);
+});
+
+var midiOnEndCallback = null;
+
+function stopMidi(fromPlaylist) {
+  if (midiPlayerLib) {
+    try { midiPlayerLib.stop(); } catch(e) {}
+    midiPlayerLib = null;
+  }
+  isPlaying = false;
+  document.getElementById('playerBar').classList.remove('visible');
+  document.getElementById('playerPlayPause').textContent = '▶';
+  if (document.getElementById('playBtn')) document.getElementById('playBtn').textContent = '▶';
+  midiOnEndCallback = null;
+  if (fromPlaylist) exitPlaylistView();
+}
+
+function loadMidi(path, label, onEnd) {
+  if (midiPlayerLib) { try { midiPlayerLib.stop(); } catch(e) {} midiPlayerLib = null; }
+  isPlaying = false;
+  midiOnEndCallback = onEnd || null;
+
+  document.getElementById('playerTitle').textContent = label;
+  document.getElementById('playerBar').classList.add('visible');
+  document.getElementById('playerPlayPause').textContent = '⏸';
+
+  var ctx = getAudioContext();
+  if (ctx.state === 'suspended') ctx.resume();
+
+  if (!USE_MANIFEST) {
+    // Legacy path for old iOS (base64 soundfont)
+    loadSoundfontLegacy(path, label, onEnd);
+    return;
+  }
+
+  // Modern path
+  if (instrument) {
+    startPlayback(path, onEnd);
+  } else {
+    loadInstrument(function() { startPlayback(path, onEnd); });
+  }
+}
+
+function loadInstrument(cb) {
+  var script = document.createElement('script');
+  script.src = 'https://gleitz.github.io/midi-js-soundfonts/FluidR3_GM/acoustic_grand_piano-mp3.js';
+  script.onload = function() {
+    if (window.MIDI && window.MIDI.Player) {
+      instrument = true;
+      cb();
+    }
+  };
+  document.head.appendChild(script);
+}
+
+function startPlayback(path, onEnd) {
+  // Use soundfont-player or MIDI.js depending on what is loaded
+  // Simplified: fetch MIDI and play via MidiPlayer
+  fetchAndPlay(path, onEnd);
+}
+
+function fetchAndPlay(path, onEnd) {
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', path, true);
+  xhr.responseType = 'arraybuffer';
+  xhr.onload = function() {
+    if (xhr.status !== 200) { if (onEnd) onEnd(); return; }
+    playArrayBuffer(xhr.response, onEnd);
+  };
+  xhr.onerror = function() { if (onEnd) onEnd(); };
+  xhr.send();
+}
+
+function playArrayBuffer(buffer, onEnd) {
+  // Load soundfont-player library lazily
+  if (window.soundfontPlayer && instrument) {
+    doPlay(buffer, onEnd);
+    return;
+  }
+  var s1 = document.createElement('script');
+  s1.src = 'https://cdn.jsdelivr.net/npm/midi-player-js@2.0.16/browser/midiplayer.min.js';
+  s1.onload = function() {
+    var s2 = document.createElement('script');
+    s2.src = 'https://cdn.jsdelivr.net/npm/soundfont-player@0.12.0/dist/soundfont-player.min.js';
+    s2.onload = function() {
+      instrument = true;
+      doPlay(buffer, onEnd);
+    };
+    document.head.appendChild(s2);
+  };
+  document.head.appendChild(s1);
+}
+
+function doPlay(buffer, onEnd) {
+  var ctx = getAudioContext();
+  if (ctx.state === 'suspended') ctx.resume();
+  var Player = window.MidiPlayer ? window.MidiPlayer.Player : null;
+  if (!Player) { if (onEnd) onEnd(); return; }
+
+  var player = new Player(function(event) {
+    if (event.name === 'Note on' && event.velocity > 0) {
+      if (window._sf_instrument) {
+        window._sf_instrument.play(event.noteName, ctx.currentTime, { gain: event.velocity / 100 });
+      }
+    }
+  });
+
+  player.on('endOfFile', function() {
+    isPlaying = false;
+    document.getElementById('playerPlayPause').textContent = '▶';
+    if (onEnd) onEnd();
+  });
+
+  if (!window._sf_instrument) {
+    Soundfont.instrument(ctx, 'acoustic_grand_piano').then(function(sf) {
+      window._sf_instrument = sf;
+      player.loadArrayBuffer(buffer);
+      player.play();
+      isPlaying = true;
+      midiPlayerLib = player;
+    });
+  } else {
+    player.loadArrayBuffer(buffer);
+    player.play();
+    isPlaying = true;
+    midiPlayerLib = player;
+  }
+}
+
+function loadSoundfontLegacy(path, label, onEnd) {
+  // Fallback for very old iOS — just show the bar, no actual playback
+  document.getElementById('playerTitle').textContent = label + ' (musika hindi available)';
+  isPlaying = false;
+  document.getElementById('playerPlayPause').textContent = '▶';
+}
+
+// ── Service Worker ────────────────────────────────────────────────────
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
+
+</script>
+</body>
+</html>
