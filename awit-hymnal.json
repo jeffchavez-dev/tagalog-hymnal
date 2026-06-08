@@ -454,7 +454,7 @@
     {
       "id": "42",
       "collection": "awit",
-      "title": "MARILANG HESUS",
+      "title": "MARILAG NA HESUS",
       "english_tune": null,
       "section": "Dios Anak",
       "firstLine": "Marilang Hesus,",
@@ -476,13 +476,13 @@
     {
       "id": "44",
       "collection": "awit",
-      "title": "DAKILA ANG AKING TAGAPAG-LISTAS",
+      "title": "DAKILA ANG AKING TAGAPAGLIGTAS",
       "english_tune": "A Wonderful Savior",
       "section": "Dios Anak",
-      "firstLine": "Dakila ang aking Tagapag-listas,",
+      "firstLine": "Dakila ang aking Tagapagligtas,",
       "midi_collection": null,
       "midi_id": null,
-      "text": "1 Dakila ang aking Tagapag-listas\nSi Hesus,\nNg Kanyang nilisan ang kalangitan\nAng lahat N'ya'y lumingkod ng tulong.\nHirap N'ya ay kusang lumisan\nAko ngayo'y kusang pag-isipan.\nAl may tuloy na ating magkasama\nAl may tuloy na ating kalahatin.\n\nRefrain:\nSiya ay Tagapag-listas Ko,\nAt Si Hesus ang nagtubos;\nTagapag-listas Ko Si Hesus\nAt maluwag ang Kanyang pag-ibig.\n\n2 Dakila ang aking Tagapag-listas\nTuney kong kahanga-hanga;\nAng Kanyang kapangyarihan\nAy walang katulad sa lahat.\nSiya ang naging kapatid ko\nSa Kanya'y laging maglingkod;\nAl may tuloy na ating magkasama\nAl may tuloy na ating kalahatin."
+      "text": "1 Dakila ang aking Tagapagligtas\nSi Hesus,\nNg Kanyang nilisan ang kalangitan\nAng lahat N'ya'y lumingkod ng tulong.\nHirap N'ya ay kusang lumisan\nAko ngayo'y kusang pag-isipan.\nAl may tuloy na ating magkasama\nAl may tuloy na ating kalahatin.\n\nRefrain:\nSiya ay Tagapagligtas Ko,\nAt Si Hesus ang nagtubos;\nTagapagligtas Ko Si Hesus\nAt maluwag ang Kanyang pag-ibig.\n\n2 Dakila ang aking Tagapagligtas\nTuney kong kahanga-hanga;\nAng Kanyang kapangyarihan\nAy walang katulad sa lahat.\nSiya ang naging kapatid ko\nSa Kanya'y laging maglingkod;\nAl may tuloy na ating magkasama\nAl may tuloy na ating kalahatin."
     },
     {
       "id": "45",
@@ -520,13 +520,13 @@
     {
       "id": "48",
       "collection": "awit",
-      "title": "KAWILI-WILING PAKONGGAT",
+      "title": "KAWILI-WILING PAKINGGAN",
       "english_tune": "How Sweet the Name of Jesus Sounds",
       "section": "Dios Anak",
-      "firstLine": "Kawili-wiling pakonggat,",
+      "firstLine": "Kawili-wiling pakinggan,",
       "midi_collection": null,
       "midi_id": null,
-      "text": "1 Kawili-wiling pakonggat\nKaaya-ayang tawid;\nDulot nito'y kaginhawahan\nAt kapayapaan palagi.\n\n2 Hanggang mabilis saligang\nBiglang matap't tulungang;\nDulot nito'y kaginhawahan\nAt kapayapaan ng buhay.\n\n3 Hanggang mabilis saligang\nBiglang matap't tulungang;\nAt saglitan lakataman N'ya\nAl ating lakataman lamang."
+      "text": "1 Kawili-wiling pakinggan\nKaaya-ayang tawid;\nDulot nito'y kaginhawahan\nAt kapayapaan palagi.\n\n2 Hanggang mabilis saligang\nBiglang matap't tulungang;\nDulot nito'y kaginhawahan\nAt kapayapaan ng buhay.\n\n3 Hanggang mabilis saligang\nBiglang matap't tulungang;\nAt saglitan lakataman N'ya\nAl ating lakataman lamang."
     },
     {
       "id": "49",
@@ -1323,6 +1323,17 @@
     {
       "id": "121",
       "collection": "awit",
+      "title": "BATONG WALANG HANGGANAN",
+      "english_tune": "Rock of Ages",
+      "section": "Ebanghelyo",
+      "firstLine": "Batong walang hangganan,",
+      "midi_collection": null,
+      "midi_id": null,
+      "text": "1 Batong walang hangganan,\nAko'y iyong tulungang;\nTup'in-'Yong kautusan\nSa sala'y magbabayan.\n\n2 O 'wag akong kalimutan\nKahit maraming anuman;\nSa krus lang ang kasalanan\nBatong walang hanggan.\n\n3 Sa pag-alis ko rito,\nLubos na palayain Mo;\nAko'y hugasan Mong tunay\nSa dugo Mong masagwa.\n\n4 Pag ako'y papanaw na,\nSa Iyong mga paa;\nBatong walang hangganan\nAko'y kanlungin Niya."
+    },
+    {
+      "id": "122",
+      "collection": "awit",
       "title": "O HESUS NA MANUNUBOS",
       "english_tune": "Pass Me Not, O Gentle Savior",
       "section": "Ebanghelyo",
@@ -1332,7 +1343,7 @@
       "text": "1 O Hesus na Manunubos,\nHuwag Mo akong laktawan;\nHabang iba ay tumatawag\nAko ring marinig Mo.\n\nRefrain:\nDinggin Mo, O Tagapagligtas\nAng aking panawagan;\nHabang iba ay tumatawag\nAko ring marinig Mo.\n\n2 O Hesus na Manunubos,\nHuwag Mo akong laktawan;\nAng Iyong biyaya ay sapat\nAt ang Iyong pag-ibig ay wagas."
     },
     {
-      "id": "122",
+      "id": "123",
       "collection": "awit",
       "title": "O HESUS INAALAYAN MO",
       "english_tune": "Rescue the Perishing",
@@ -1343,7 +1354,7 @@
       "text": "1 O Hesus inaalayan Mo\nAng mga naliligaw;\nAng Iyong pag-ibig ay walang hanggan\nAt hindi mababago.\n\n2 O Hesus inaalayan Mo\nAng mga nangangailangan;\nAng Iyong biyaya ay sapat\nAt ang Iyong pag-ibig ay wagas."
     },
     {
-      "id": "123",
+      "id": "124",
       "collection": "awit",
       "title": "BUHAT SA AKING KASALANAN",
       "english_tune": null,
@@ -1354,7 +1365,7 @@
       "text": "1 Buhat sa aking kasalanan,\nSi Hesus ang aking kaligtasan;\nAng Kanyang dugo ay naghugas\nSa lahat ng aking kasalanan.\n\n2 Buhat sa aking kahirapan,\nSi Hesus ang aking lakas;\nAng Kanyang biyaya ay sapat\nAt ang Kanyang pag-ibig ay walang hanggan."
     },
     {
-      "id": "124",
+      "id": "125",
       "collection": "awit",
       "title": "SALIGAN NG IGLESIA",
       "english_tune": "The Church's One Foundation",
@@ -1365,7 +1376,7 @@
       "text": "1 Saligan ng Iglesia\nAy si Kristong Hesus;\nSiya'y nagtatag ng Kanyang Iglesia\nAt Kanyang inibig.\n\n2 Mula sa bawat bansa\nAng Kanyang mga hinirang;\nInipon ng Dios sa isang katawan\nAt pinagsamasama.\n\n3 Sa pamamagitan ng tubig at salita\nSiya ay nagpabinyag;\nAt ngayon ay naghahari\nSa langit at sa lupa.\n\n4 Ang Iglesia ay may mga kaaway\nNgunit hindi matatalo;\nSapagkat si Kristo ang Ulo\nAt Siya ang Tagapagligtas.\n\n5 Kahit puno ng subok at kapighatian\nAng Iglesia ay mananatili;\nSapagkat ang Dios ang nagtatayo\nAt hindi mahahati."
     },
     {
-      "id": "125",
+      "id": "126",
       "collection": "awit",
       "title": "TUNAY KANG DINADAKILA",
       "english_tune": "Glorious Things of Thee Are Spoken",
@@ -1376,7 +1387,7 @@
       "text": "1 Tunay kang dinadakila,\nBayan ng Dios na mahal;\nNag-alay ang Hari ng lahat\nPara sa iyong kaligtasan.\n\n2 Ang Bato ng iyong kaligtasan\nAy si Kristong Hesus;\nAng Kanyang pag-ibig ay walang hanggan\nAt hindi mababago.\n\n3 Purihin ang Panginoon\nPara sa lahat ng Kanyang biyaya;\nAng lahat ng Kanyang mga hinirang\nAy magpupuri sa Kanya."
     },
     {
-      "id": "126",
+      "id": "127",
       "collection": "awit",
       "title": "MAHAL KONG BAYAN MO",
       "english_tune": "I Love Thy Kingdom, Lord",
@@ -1387,7 +1398,7 @@
       "text": "1 Mahal kong Bayan Mo,\nO Panginoon naming Hari;\nAng aming puso ay nagmamahal\nSa Iyong Iglesia.\n\n2 Para sa Iglesia Mo\nSi Kristo ay nagbigay ng Kanyang buhay;\nAng Kanyang pag-ibig ay walang hanggan\nAt hindi mababago.\n\n3 Ang Iglesia Mo ay aming mahal\nAt aming paglilingkuran;\nSa Iyong Iglesia ay magtatayo\nHanggang sa walang katapusan."
     },
     {
-      "id": "127",
+      "id": "128",
       "collection": "awit",
       "title": "ANG BATONG PARIS OL",
       "english_tune": null,
@@ -1398,7 +1409,7 @@
       "text": "1 Ang Batong Paris ol\nAng pundasyon ng ating buhay;\nSi Kristong Hesus ang ating lakas\nAt ang ating pag-asa.\n\n2 Sa Bato na iyon ay nakatayo\nAng Iglesia ng Panginoon;\nAt hindi matatalo\nNi kamatayan man."
     },
     {
-      "id": "128",
+      "id": "129",
       "collection": "awit",
       "title": "HESUS, DAKILANG HARI",
       "english_tune": null,
@@ -1409,7 +1420,7 @@
       "text": "1 Hesus, dakilang Hari,\nNg lahat ng lahat;\nAng Iyong paghahari\nAy walang katapusan.\n\n2 Hesus, dakilang Hari,\nNg aming puso at buhay;\nAng Iyong pag-ibig ay walang hanggan\nAt hindi mababago."
     },
     {
-      "id": "129",
+      "id": "130",
       "collection": "awit",
       "title": "O HESUS, MANGYAYARI BA?",
       "english_tune": null,
@@ -1420,7 +1431,7 @@
       "text": "1 O Hesus, mangyayari ba,\nNa ang aming panalangin ay dinggin Mo;\nAng aming puso ay naghahanap\nNg Iyong presensya.\n\n2 O Hesus, mangyayari ba,\nNa ang aming puso ay mabago;\nAng Iyong biyaya ay sapat\nAt ang Iyong pag-ibig ay wagas."
     },
     {
-      "id": "130",
+      "id": "131",
       "collection": "awit",
       "title": "ANG PAGBABAUTISMO",
       "english_tune": null,
@@ -1431,7 +1442,7 @@
       "text": "1 Ang pagbabautismo'y sumasimbulo\nNa ang tao'y namatay at nabuhay;\nAt sa tubig ay inilubog\nNa sumisimbolo ng bagong buhay.\n\n2 Sa binyag ni Hesus ay ating sinundan\nNa ang Kanyang halimbawa;\nAt ito'y simbolo ng ating pananampalataya\nSa Kanyang kamatayan at muling pagkabuhay.\n\n3 Ang binyag ay hindi nagliligtas\nKundi simbolo lamang;\nNgunit ito ay utos ng Panginoon\nAt ating dapat sundin."
     },
     {
-      "id": "131",
+      "id": "132",
       "collection": "awit",
       "title": "MANININGAL SA KAHABAGAN",
       "english_tune": "Let the Lower Lights be Burning",
@@ -1442,7 +1453,7 @@
       "text": "1 Maniningal sa kahabagan\nNg Panginoong nagbibigay;\nAng aming buhay ay ibibigay\nPara sa Kanyang Iglesia.\n\nRefrain:\nNag-aapoy ang ilaw,\nNag-aapoy ang ilaw;\nSend a gleam across the wave!\nNag-aapoy ang ilaw.\n\n2 Maniningal sa kahabagan\nNg Panginoong nagmamahal;\nAng aming puso ay nagbibigay\nSa Kanyang Iglesia."
     },
     {
-      "id": "132",
+      "id": "133",
       "collection": "awit",
       "title": "SA 'YONG HAPAG, O KRISTO",
       "english_tune": null,
@@ -1453,7 +1464,7 @@
       "text": "1 Sa 'Yong hapag, O Kristo,\nKami ay dumadalo;\nAng 'Yong katawan at dugo\nAy aming tinatanggap.\n\n2 Sa 'Yong hapag, O Kristo,\nKami ay nagpapasalamat;\nAng 'Yong biyaya ay walang hanggan\nAt hindi mababago."
     },
     {
-      "id": "133",
+      "id": "134",
       "collection": "awit",
       "title": "O KAY TAMING MANALAMIN",
       "english_tune": "I Will Sing of My Redeemer",
@@ -1464,7 +1475,7 @@
       "text": "1 O kay taming manalamin\nSa iyong kalooban;\nAng awitin ng aming puso\nAy papuri sa Iyo.\n\n2 O kay taming manalamin\nSa iyong pagmamahal;\nAng awitin ng aming puso\nAy pasasalamat sa Iyo."
     },
     {
-      "id": "134",
+      "id": "135",
       "collection": "awit",
       "title": "ANG GABING MADLIN",
       "english_tune": "God of Our Fathers",
@@ -1475,7 +1486,7 @@
       "text": "1 Ang gabing madlin aming ninanahin,\nHindi namin alam ang kalooban;\nKaya't hiling namin ang Iyong gabay\nSa bawat araw ng aming buhay.\n\n2 Ang gabing madlin ay puno ng pag-asa,\nDahil si Hesus ay kasama namin;\nAng Kanyang biyaya ay sapat\nAt ang Kanyang pag-ibig ay wagas."
     },
     {
-      "id": "135",
+      "id": "136",
       "collection": "awit",
       "title": "ANG KRISTIYANONG SAMBAHAYAN",
       "english_tune": "Happy the Home When God Is There",
@@ -1486,7 +1497,7 @@
       "text": "1 Ang Kristiyanong sambahayan\nPuspos galak at kaayaaan;\nNg haligi na matibay\nAng pangako ng Dios.\n\n2 Ang Kristiyanong sambahayan\nAy puno ng pagmamahal;\nAng Dios ang nagtatayo\nAt Hindi matatalo."
     },
     {
-      "id": "136",
+      "id": "137",
       "collection": "awit",
       "title": "O KAY BUTING KAIBIGAN",
       "english_tune": "What a Friend We Have in Jesus",
@@ -1497,7 +1508,7 @@
       "text": "1 O kay buting kaibigan\nSi Hesus para sa atin;\nTayo ay dinumulog sa Kanya\nAt nati'y tinanggap Niya.\n\n2 May pagsubok ba't kapighatian?\nPumarito ka kay Hesus;\nSiya ang tanging kaibigan\nNa laging kasama mo.\n\n3 Tayo ba'y may kabigatan?\nPumarito ka kay Hesus;\nSiya ang tanging kaibigan\nNa laging kasama mo.\n\n4 Sa buhay at kamatayan\nSi Hesus ang aming kaibigan;\nSiya ang tanging kaibigan\nNa laging kasama mo."
     },
     {
-      "id": "137",
+      "id": "138",
       "collection": "awit",
       "title": "ANG KRISTIYANONG SAMBAHAYAN",
       "english_tune": "At the Name of Jesus",
@@ -1508,7 +1519,7 @@
       "text": "1 Ang Kristiyanong sambahayan\nPusos galaw at kaayaaan;\nSa pangalan ni Hesus\nAy mapagkakatiwalaan.\n\n2 Ang Kristiyanong sambahayan\nAy puno ng kapayapaan;\nSi Hesus ang pundasyon\nNg bawat Kristiyanong tahanan."
     },
     {
-      "id": "138",
+      "id": "139",
       "collection": "awit",
       "title": "KAAYAYANG MAKITA",
       "english_tune": "How Sweet, How Heavenly Is the Sight",
@@ -1519,7 +1530,7 @@
       "text": "1 Kaayayang makita\nNa ang mga Kristiyano\nAy nagkakaisa sa pag-ibig\nAt nagmamahal sa isa't isa.\n\n2 Kaayayang makita\nNa ang mga kapatid\nAy nagkakaisa sa pananampalataya\nAt nagtatayo para sa katotohanan."
     },
     {
-      "id": "139",
+      "id": "140",
       "collection": "awit",
       "title": "TUNAY NA'Y SIMA",
       "english_tune": "Show Me Thy Ways",
@@ -1530,7 +1541,7 @@
       "text": "1 Tunay na'y sima ng aming puso\nAngkop sa 'Yong kalooban;\nIpakita Mo ang 'Yong daan\nAt aming susundin.\n\n2 Tunay na'y sima ng aming buhay\nAngkop sa 'Yong kagustuhan;\nIpakita Mo ang 'Yong daan\nAt aming susundin."
     },
     {
-      "id": "140",
+      "id": "141",
       "collection": "awit",
       "title": "PAGPALAIN ANG PAG-IIS",
       "english_tune": "Blest Be the Tie",
@@ -1541,7 +1552,7 @@
       "text": "1 Pagpalain ang pag-iis\nNg ating mga puso;\nSa pag-ibig ng Kristiyanismo\nAy nagkakaisa tayo.\n\n2 Bago tayo maghiwalay\nAy nagdarasal tayo;\nAng ating mga luha\nAy nagpapahayag ng pag-ibig.\n\n3 Mula sa isa't isa\nAy hindi tayo ganap na nahihiwalay;\nAng ating mga puso ay nagkakasama\nSa pamamagitan ni Hesus."
     },
     {
-      "id": "141",
+      "id": "142",
       "collection": "awit",
       "title": "ANG MGA KRISTIYANO",
       "english_tune": null,
@@ -1552,7 +1563,7 @@
       "text": "1 Ang mga Kristiyano\nAy nagkakaisa;\nSa pag-ibig ng Panginoon\nAy nagtatayo.\n\n2 Ang mga Kristiyano\nAy nagtatayo para sa katotohanan;\nSa lahat ng pagsubok\nAy si Hesus ang lakas nila."
     },
     {
-      "id": "142",
+      "id": "143",
       "collection": "awit",
       "title": "SINO'NG NASA PANIG NG PANGINOON?",
       "english_tune": "Who Is On the Lord's Side?",
@@ -1563,7 +1574,7 @@
       "text": "1 Sino'ng nasa panig ng Panginoon?\nSino ang sumasampa sa Kanya?\nAng lahat ng Kristiyano\nAy nasa panig ng Hari.\n\nRefrain:\nKami ay nasa panig ng Hari,\nKami ay nasa panig ni Hesus;\nKami ay nasa panig ng Panginoon\nAt kami ay magtatagumpay.\n\n2 Sino'ng nasa panig ng Panginoon?\nSino ang handang lumaban para sa Kanya?\nAng lahat ng Kristiyano\nAy nasa panig ng Hari."
     },
     {
-      "id": "143",
+      "id": "144",
       "collection": "awit",
       "title": "GUMAWA, GUMAWA",
       "english_tune": "To the Work",
@@ -1574,7 +1585,7 @@
       "text": "1 Gumawa, gumawa,\nSa lahat ng ating lakas;\nSa paglilingkod sa Panginoon\nAy walang masasayang panahon.\n\nRefrain:\nGumawa! Gumawa!\nGumawa para sa Panginoon;\nGumawa! Gumawa!\nGumawa hanggang sa Siya ay dumating.\n\n2 Gumawa, gumawa,\nSa mga naligaw;\nSa paglilingkod sa Panginoon\nAy walang masasayang panahon."
     },
     {
-      "id": "144",
+      "id": "145",
       "collection": "awit",
       "title": "LINGKOD NG DIOS, MANALIG",
       "english_tune": "Workman of God, O Lose Not Heart",
@@ -1585,7 +1596,7 @@
       "text": "1 Lingkod ng Dios, manalig ka,\nHuwag sumuko sa trabaho;\nAng Iyong Dios ay kasama mo\nAt Siya ay magtatagumpay.\n\n2 Lingkod ng Dios, manalig ka,\nHuwag masiraan ng loob;\nAng Iyong Dios ay kasama mo\nAt Siya ay magtatagumpay."
     },
     {
-      "id": "145",
+      "id": "146",
       "collection": "awit",
       "title": "KAY HESUS MANINDIGAN",
       "english_tune": "Stand Up, Stand Up for Jesus",
@@ -1596,7 +1607,7 @@
       "text": "1 Kay Hesus manindigan,\nMga sundalong Kristiyano;\nItaas ang Kanyang bandila\nAt lumaban para sa Kanya.\n\nRefrain:\nManindigan para kay Hesus,\nManindigan para kay Hesus;\nAng Kanyang kapangyarihan\nAy magtatagumpay.\n\n2 Kay Hesus manindigan,\nSa lahat ng pagsubok;\nAng Kanyang lakas ay sapat\nAt Siya ay magtatagumpay."
     },
     {
-      "id": "146",
+      "id": "147",
       "collection": "awit",
       "title": "O KRISTIYANONG KAWAL",
       "english_tune": "Stand Up Stand Firm Christian Soldiers",
@@ -1607,7 +1618,7 @@
       "text": "1 O Kristiyanong kawal,\nhayo sa laban;\nAng ating mga paa ay lalakad\nPara sa Panginoon.\n\n2 O Kristiyanong kawal,\nHuwag matakot;\nAng ating Dios ay kasama\nAt Siya ay magtatagumpay."
     },
     {
-      "id": "147",
+      "id": "148",
       "collection": "awit",
       "title": "ANG TINIG NG PAG-AAWITAN",
       "english_tune": "Battle Hymn of the Republic",
@@ -1618,7 +1629,7 @@
       "text": "1 Ang tinig ng pag-aawitan\nNg mga kawal ng Panginoon;\nSa bawat araw ng labanan\nAng ating Dios ay kasama.\n\n2 Ang ating Dios ay naghahari\nSa lahat ng lahat;\nAng Kanyang kapangyarihan\nAy walang katulad."
     },
     {
-      "id": "148",
+      "id": "149",
       "collection": "awit",
       "title": "LUNGSOD NG DIOS, YUMAOT IPAGSULIT",
       "english_tune": "O Zion Haste",
@@ -1629,7 +1640,7 @@
       "text": "1 Lungsod ng Dios, yumaot ipagsulit,\nAng balita ng kaligtasan;\nSa lahat ng tao sa buong mundo\nAy ipahayag ang Kanyang pangalan.\n\nRefrain:\nIpagsulit, ipagsulit!\nAng balita ng kaligtasan;\nIpagsulit, ipagsulit!\nHanggang sa buong mundo.\n\n2 Lungsod ng Dios, yumaot ipagsulit,\nAng pag-ibig ng Panginoon;\nSa lahat ng tao sa buong mundo\nAy ipahayag ang Kanyang pagmamahal."
     },
     {
-      "id": "149",
+      "id": "150",
       "collection": "awit",
       "title": "TINIG N'YAY NARIRINIG",
       "english_tune": "The Voice of Jesus Say",
@@ -1640,7 +1651,7 @@
       "text": "1 Tinig N'ya'y naririnig,\nAko'y tumatawag sa iyo;\nPumarito ka sa Akin\nAt ikaw ay pahihingahin Ko.\n\n2 Tinig N'ya'y naririnig,\nAko ang ilaw ng mundo;\nPumarito ka sa Akin\nAt ikaw ay bibigyan ng liwanag."
     },
     {
-      "id": "150",
+      "id": "151",
       "collection": "awit",
       "title": "IBIGIIN ANG KAPWA",
       "english_tune": "Rescue the Perishing",
@@ -1651,7 +1662,7 @@
       "text": "1 Ibigiin ang kapwa,\nNg ating mga kapatid;\nAng Panginoon ay nagmamahal\nAt gusto Niyang iligtas sila.\n\n2 Ibigiin ang kapwa,\nNg mga naliligaw;\nAng Panginoon ay nagmamahal\nAt gusto Niyang iligtas sila."
     },
     {
-      "id": "151",
+      "id": "152",
       "collection": "awit",
       "title": "MANINIGAL SA KAHABAGAN",
       "english_tune": "Let the Lower Lights be Burning",
@@ -1662,7 +1673,7 @@
       "text": "1 Maninigal sa kahabagan\nNg Panginoong nagbibigay;\nAng aming buhay ay ibibigay\nPara sa Kanyang Iglesia."
     },
     {
-      "id": "152",
+      "id": "153",
       "collection": "awit",
       "title": "HESUS, PAG-IBIG MO",
       "english_tune": "Jesus, Boundless Love to Me",
@@ -1673,7 +1684,7 @@
       "text": "1 Hesus, pag-ibig Mo\nAy walang katulad;\nAng Iyong biyaya ay dakila\nAt hindi mababago.\n\n2 Hesus, pag-ibig Mo\nAy walang hanggan;\nAng Iyong presensya ay kasama ko\nSa lahat ng oras.\n\n3 Hesus, pag-ibig Mo\nAy nagbibigay ng lakas;\nAng Iyong biyaya ay sapat\nAt ang Iyong pag-ibig ay wagas."
     },
     {
-      "id": "153",
+      "id": "154",
       "collection": "awit",
       "title": "ULAN NG PAGPAPALA",
       "english_tune": "There Shall Be Showers of Blessing",
@@ -1684,7 +1695,7 @@
       "text": "1 Ulan ng pagpapala,\nIto ang pangako ng Dios;\nMercy drops round us are falling,\nNgunit para sa pagbubuhos ay aming hihintayin.\n\nRefrain:\nUlan, ulan ng pagpapala;\nUlan, ulan, ibuhos ngayon;\nMercy drops round us are falling,\nNgunit para sa pagbubuhos ay aming hihintayin.\n\n2 Ulan ng pagpapala,\nIto ang pangako ng Dios;\nAng Kanyang biyaya ay walang hanggan\nAt hindi mababago."
     },
     {
-      "id": "154",
+      "id": "155",
       "collection": "awit",
       "title": "NAGPAPAHAYAG NG TUNGKOL KAY KRISTO",
       "english_tune": "Sowing in the Morning",
@@ -1695,7 +1706,7 @@
       "text": "1 Nagpapahayag ng tungkol kay Kristo,\nSa umaga at sa gabi;\nAng binhi ng kaniyang salita\nAy aming inihahasik.\n\nRefrain:\nMag-aani tayo sa tag-araw,\nMag-aani tayo sa tag-araw;\nAng ating mga luha ay magiging kagalakan\nNang ating maani ang ating binhi.\n\n2 Nagpapahayag ng tungkol kay Kristo,\nSa lahat ng dako;\nAng binhi ng kaniyang pagmamahal\nAy aming inihahasik."
     },
     {
-      "id": "155",
+      "id": "156",
       "collection": "awit",
       "title": "DI KO ALAM ANG DAHILAN",
       "english_tune": "I Know Not Why God's Wondrous Grace",
@@ -1706,7 +1717,7 @@
       "text": "1 Di ko alam ang dahilan\nNg biyaya ng Dios sa akin;\nNgunit naniniwala akong tapat\nNa si Hesus ay namatay para sa akin.\n\nRefrain:\nNaniniwala ako, naniniwala ako;\nNaniniwala ako sa Kanyang salita;\nNaniniwala ako, naniniwala ako;\nNa si Hesus ay nagliligtas.\n\n2 Di ko alam ang dahilan\nNg pagmamahal ng Dios sa akin;\nNgunit naniniwala akong tapat\nNa si Hesus ang aking Tagapagligtas."
     },
     {
-      "id": "156",
+      "id": "157",
       "collection": "awit",
       "title": "O KAY INAM NG NASA KAY JESUS",
       "english_tune": "Blessed Assurance",
@@ -1717,7 +1728,7 @@
       "text": "1 O kay inam ng nasa kay Jesus,\nIto ang kasiyahan ng aking kaluluwa!\nAng Anak ng Dios ay naligtas na,\nNabuhay sa kapangyarihan ng Espiritu.\n\nRefrain:\nIto ang aking kwento,\nIto ang aking awit;\nPupurihin ang aking Tagapagligtas\nSa lahat ng oras.\n\n2 Ganap na sumuko, sa kasiyahan na ganap,\nKita ko ang liwanag ng Iyong mukha;\nAng mga anghel ng langit ay nagtatayo;\nEcho-ing ang aking rapturous praise."
     },
     {
-      "id": "157",
+      "id": "158",
       "collection": "awit",
       "title": "PANATAG AY KALILIM",
       "english_tune": "Like a River Glorious",
@@ -1728,7 +1739,7 @@
       "text": "1 Panatag ay kalilim\nNg kapayapaan ng Dios;\nTulad ng ilog na dumadagos\nSa aking kaluluwa.\n\nRefrain:\nPerpekto, napakatibay,\nAnggulo sa kapayapaan;\nSa pamamagitan ng pagtitiwala at panalangin\nAng kaluluwa ay nakakahanap ng kapayapaan.\n\n2 Panatag ay kalilim\nNg Kanyang pagmamahal;\nTulad ng mga alon ng dagat\nNa nagdadala ng kapayapaan."
     },
     {
-      "id": "158",
+      "id": "159",
       "collection": "awit",
       "title": "NASUMPUNGAN KO ANG ISANG KAIBIGAN",
       "english_tune": "I've Found a Friend",
@@ -1739,7 +1750,7 @@
       "text": "1 Nasumpungan ko ang isang kaibigan\nNa nagmamahal sa akin;\nSiya ay si Hesus, ang Anak ng Dios\nNa aking Tagapagligtas.\n\n2 Nasumpungan ko ang isang kaibigan\nNa laging kasama ko;\nSiya ay si Hesus, ang Anak ng Dios\nNa aking Panginoon."
     },
     {
-      "id": "159",
+      "id": "160",
       "collection": "awit",
       "title": "TINIG NI KRISTO'Y NARING",
       "english_tune": "I Hear the Voice of Jesus Say",
@@ -1750,7 +1761,7 @@
       "text": "1 Tinig ni Kristo'y naring\nNa nagsasabi sa akin;\nPumarito ka sa Akin\nAt ikaw ay pahihingahin Ko.\n\n2 Tinig ni Kristo'y naring\nNa nagsasabi sa akin;\nAko ang tubig ng buhay\nMinumin Mo Ako at hindi ka mauuhaw.\n\n3 Tinig ni Kristo'y naring\nNa nagsasabi sa akin;\nAko ang ilaw ng mundo\nPumarito ka at ikaw ay bibigyan ng liwanag."
     },
     {
-      "id": "160",
+      "id": "161",
       "collection": "awit",
       "title": "SI HESUS ANG NAGLILIGTAS",
       "english_tune": "Jesus Saves!",
@@ -1761,7 +1772,7 @@
       "text": "1 Si Hesus ang nagliligtas!\nIpahayag ang balita;\nSa lahat ng tao ay ipahayag\nNa si Hesus ay nagliligtas!\n\nRefrain:\nSi Hesus ay nagliligtas!\nSi Hesus ay nagliligtas!\nIpahayag sa lahat ng mundo\nNa si Hesus ay nagliligtas!\n\n2 Si Hesus ang nagliligtas!\nAng balita ay totoo;\nSa lahat ng tao ay ipahayag\nNa si Hesus ay nagliligtas!"
     },
     {
-      "id": "161",
+      "id": "162",
       "collection": "awit",
       "title": "O AKO AY NALILULIGMOK",
       "english_tune": "He Leadeth Me",
@@ -1772,7 +1783,7 @@
       "text": "1 O ako ay naliluligmok\nNg Kanyang makapangyarihang kamay;\nAng Hari ng mga hari ay nagtatayo\nAt Kanyang ginagabayan ang aking buhay.\n\nRefrain:\nSiya ay gumagabay sa akin,\nSiya ay gumagabay sa akin;\nSa Kanyang sariling kamay\nSiya ay gumagabay sa akin.\n\n2 Minsan sa dagat, minsan sa lupa,\nMinsan sa pamamagitan ng apoy;\nNgunit kahit saan ay Siya ay kasama\nAt Kanyang ginagabayan ang aking buhay."
     },
     {
-      "id": "162",
+      "id": "163",
       "collection": "awit",
       "title": "NASUMPUNGAN KO ANG ISANG KAIBIGAN",
       "english_tune": "I've Found a Friend",
@@ -1783,7 +1794,7 @@
       "text": "1 Nasumpungan ko ang isang Kaibigan\nNa si Hesus Kristong mahal;\nSiya ay laging kasama ko\nSa lahat ng aking buhay.\n\n2 Sa bawat pagsubok at kahirapan\nSi Hesus ay kasama ko;\nAng Kanyang biyaya ay sapat\nAt ang Kanyang pag-ibig ay wagas."
     },
     {
-      "id": "163",
+      "id": "164",
       "collection": "awit",
       "title": "AKO AY NALULUNOD",
       "english_tune": "I Was Sinking Deep in Sin",
@@ -1794,7 +1805,7 @@
       "text": "1 Ako ay nalulunod\nSa dagat ng kasalanan;\nNgunit si Hesus ay dumating\nAt iniligtas Niya ako.\n\nRefrain:\nPag-ibig ang nagligtas sa akin,\nPag-ibig ang nagligtas sa akin;\nAng pag-ibig ng Panginoon\nAng nagligtas sa akin.\n\n2 Ako ay naliligaw\nSa daan ng kasalanan;\nNgunit si Hesus ay dumating\nAt iniligtas Niya ako."
     },
     {
-      "id": "164",
+      "id": "165",
       "collection": "awit",
       "title": "AKING LABAS NA KABIGAN",
       "english_tune": "Leaning on the Everlasting Arms",
@@ -1805,7 +1816,7 @@
       "text": "1 Aking labas na kabigan\nAng walang hanggang braso ng Dios;\nKamangha-mangha ang pakikipagtulungan\nNg walang hanggang braso ng Dios.\n\nRefrain:\nPagpalain, pagpalain,\nNa sandalan ang walang hanggang braso;\nPagpalain, pagpalain,\nNa sandalan ang walang hanggang braso.\n\n2 O napaka-linis at napaka-ligtas\nNa sandalan ang walang hanggang braso;\nO napaka-maliwanag ang landas\nNa sandalan ang walang hanggang braso."
     },
     {
-      "id": "165",
+      "id": "166",
       "collection": "awit",
       "title": "SA PUSO KO'Y MAY TANGING",
       "english_tune": "There's a Wideness in God's Mercy",
@@ -1816,7 +1827,7 @@
       "text": "1 Sa puso ko'y may tanging\nNa pagmamahal sa Dios;\nAng Kanyang awa ay malawak\nTulad ng kalawakan.\n\n2 Ang pagmamahal ng Dios ay dakila\nAt walang katulad;\nAng Kanyang biyaya ay walang hanggan\nAt hindi mababago."
     },
     {
-      "id": "166",
+      "id": "167",
       "collection": "awit",
       "title": "KAY INAM IPAMALITA",
       "english_tune": "Redeemed, How I Love to Proclaim It",
@@ -1827,7 +1838,7 @@
       "text": "1 Kay inam ipamalita\nNa ako'y tinubos na;\nAng Kanyang dugo ay naghugas\nSa lahat ng aking kasalanan.\n\nRefrain:\nTinubos, tinubos,\nAng aking kaluluwa ay malaya;\nTinubos, tinubos,\nNg dugo ng Kordero.\n\n2 Kay inam ipamalita\nNa si Hesus ay buhay;\nAng Kanyang kapangyarihan ay dakila\nAt hindi mababago."
     },
     {
-      "id": "167",
+      "id": "168",
       "collection": "awit",
       "title": "AAWITING KO ANG BUHAY",
       "english_tune": "I Will Sing the Wondrous Story",
@@ -1838,7 +1849,7 @@
       "text": "1 Aawiting ko ang buhay\nNi Kristong nagmamahal;\nAng Kanyang biyaya ay dakila\nAt hindi mababago.\n\nRefrain:\nAwit ko ang buhay ni Hesus,\nAwit ko ang Kanyang pagmamahal;\nAwit ko ang buhay ni Hesus\nHanggang sa walang katapusan.\n\n2 Aawiting ko ang buhay\nNi Kristong namatay para sa akin;\nAng Kanyang dugo ay naghugas\nSa lahat ng aking kasalanan."
     },
     {
-      "id": "168",
+      "id": "169",
       "collection": "awit",
       "title": "O KAY SAYA NG SANDALI",
       "english_tune": "O Happy Day that Fixed My Choice",
@@ -1849,7 +1860,7 @@
       "text": "1 O kay saya ng sandali\nNa aking sinundan si Hesus;\nAng aking puso ay nagalak\nAt ang aking kaluluwa ay natagpuan ang kapayapaan.\n\nRefrain:\nMapayapa ang araw,\nMapayapa ang araw;\nNang si Hesus ay aking tinangkilik\nMapayapa ang araw.\n\n2 O kay saya ng sandali\nNa aking tinanggap si Hesus;\nAng aking buhay ay nagbago\nAt ang aking kaluluwa ay natagpuan ang kaligtasan."
     },
     {
-      "id": "169",
+      "id": "170",
       "collection": "awit",
       "title": "PANGINOONG HESUS SA KRUS",
       "english_tune": "Lord of the Cross of Shame",
@@ -1860,7 +1871,7 @@
       "text": "1 Panginoon Hesus sa krus,\nIkaw ay aming minamahal;\nAng Iyong dugo ay naghugas\nSa lahat ng aming kasalanan.\n\n2 Panginoon Hesus sa krus,\nIkaw ang aming kaligtasan;\nAng Iyong pag-ibig ay walang hanggan\nAt hindi mababago."
     },
     {
-      "id": "170",
+      "id": "171",
       "collection": "awit",
       "title": "DAKILANG DIOS, SA HARAP MO",
       "english_tune": "God Before Whose Face",
@@ -1871,7 +1882,7 @@
       "text": "1 Dakilang Dios, sa harap Mo\nAng aming puso ay nagpupuri;\nAng Iyong kadakilaan ay walang katulad\nAt ang Iyong kapangyarihan ay dakila.\n\n2 Dakilang Dios, sa harap Mo\nAng aming buhay ay inihahandog;\nAng Iyong biyaya ay sapat\nAt ang Iyong pag-ibig ay wagas."
     },
     {
-      "id": "171",
+      "id": "172",
       "collection": "awit",
       "title": "ANG PANANALIG KO",
       "english_tune": "My Faith Looks Up to Thee",
@@ -1882,7 +1893,7 @@
       "text": "1 Ang pananalig ko\nAy nakatutok sa Iyo;\nO Kordero ng Kalbaryo,\nTagapagligtas ko.\n\n2 Habang ako ay naglalakbay\nSa mundong ito ay madilim;\nAng Iyong liwanag ay gabay ko\nSa lahat ng aking buhay.\n\n3 Nang ang buhay ay matapos na\nAt ang kamatayan ay dumarating;\nIpag-utos Mo sa takot na tumakas\nAt sa biyaya'y gawin akong Iyong."
     },
     {
-      "id": "172",
+      "id": "173",
       "collection": "awit",
       "title": "ANG AKING PAS-ASA'Y LUBOS",
       "english_tune": "My Hope Is Built",
@@ -1893,7 +1904,7 @@
       "text": "1 Ang aking pag-asa'y lubos\nSa dugo at katuwiran ni Kristo;\nHindi ako mangangahas na magtiwala\nSa pinakamatamis na balangkas.\n\nRefrain:\nSa si Kristo lamang ang bato,\nLahat ng ibang lupa ay lumalubog;\nSa si Kristo lamang ang bato,\nLahat ng ibang lupa ay lumalubog.\n\n2 Nang kadiliman ay takpan ang katayuan\nAt ang aking puso ay namimighati;\nAng aking pag-asa ay nakakabit sa Kanya\nAt hindi mababago."
     },
     {
-      "id": "173",
+      "id": "174",
       "collection": "awit",
       "title": "NGALAN NI HESUS INGATAN",
       "english_tune": "In the Name of Jesus with You",
@@ -1904,7 +1915,7 @@
       "text": "1 Ngalan ni Hesus ingatan,\nSa lahat ng oras;\nSa Kanya'y manalig\nAt sumunod sa Kanya.\n\n2 Ngalan ni Hesus ay kapangyarihan,\nSa lahat ng oras;\nSa Kanya'y magpuri\nAt purihin ang Kanyang pangalan."
     },
     {
-      "id": "174",
+      "id": "175",
       "collection": "awit",
       "title": "ARAW ARAW NA MAGTITIWALA",
       "english_tune": "Day by Day",
@@ -1915,7 +1926,7 @@
       "text": "1 Araw araw na magtitiwala\nSa biyaya ng Dios;\nAraw araw ang Kanyang presensya\nAy kasama ko.\n\n2 Araw araw na magtitiwala\nSa Kanyang pagmamahal;\nAraw araw ang Kanyang biyaya\nAy sapat para sa akin."
     },
     {
-      "id": "175",
+      "id": "176",
       "collection": "awit",
       "title": "HESUS AY AKING LAKAS",
       "english_tune": "Jesus Is My Strength",
@@ -1926,7 +1937,7 @@
       "text": "1 Hesus ay aking lakas,\nAt aking kaligtasan;\nSa Kanya'y nagtitiwala\nAt hindi mabibigo.\n\n2 Hesus ay aking lakas,\nSa lahat ng pagsubok;\nSa Kanya'y nagtatago\nAt hindi mabibigo."
     },
     {
-      "id": "176",
+      "id": "177",
       "collection": "awit",
       "title": "AAWITING KO ANG BUHAY NI HESUS",
       "english_tune": "I Will Sing",
@@ -1937,7 +1948,7 @@
       "text": "1 Aawiting ko ang buhay ni Hesus,\nAng Kanyang pag-ibig at biyaya;\nAng Kanyang dugo ay naghugas\nSa lahat ng aking kasalanan.\n\n2 Aawiting ko ang buhay ni Hesus,\nAng Kanyang kapangyarihan at kaluwalhatian;\nAng Kanyang pangalan ay dakila\nAt hindi mababago."
     },
     {
-      "id": "177",
+      "id": "178",
       "collection": "awit",
       "title": "ANG PAG-ASANG WALANG HANGGAN",
       "english_tune": "Hope of Ages",
@@ -1948,7 +1959,7 @@
       "text": "1 Ang pag-asang walang hanggan\nAy si Kristong Hesus;\nAng Kanyang pangako ay tapat\nAt hindi mababago.\n\n2 Ang pag-asang walang hanggan\nAy ang muling pagdating ni Hesus;\nAng Kanyang paghahari ay walang katapusan\nAt Siya ay magtatagumpay."
     },
     {
-      "id": "178",
+      "id": "179",
       "collection": "awit",
       "title": "WALA AKONG IBANG PUSO",
       "english_tune": "I Surrender All",
@@ -1959,7 +1970,7 @@
       "text": "1 Lahat, lahat, lahat sa Iyo;\nLabat ng aking buhay ay para sa Iyo;\nLabat, lahat, lahat sa Iyo;\nAko ay sumusuko sa Iyo.\n\nRefrain:\nAko ay sumusuko,\nAko ay sumusuko;\nLabat ng aming buhay ay para sa Iyo;\nAko ay sumusuko.\n\n2 Lahat, lahat, lahat sa Iyo;\nAng aking puso ay inihahandog;\nLabat, lahat, lahat sa Iyo;\nAko ay sumusuko sa Iyo."
     },
     {
-      "id": "179",
+      "id": "180",
       "collection": "awit",
       "title": "TAYO AY MAGTITIWALA",
       "english_tune": "Trust and Obey",
@@ -1970,7 +1981,7 @@
       "text": "1 Nang si Hesus ay aking sinundan\nAko ay masaya;\nHindi ako babalik sa daan ng kasalanan\nNgunit magtitiwala at susunod.\n\nRefrain:\nMagtiwala at sumunod,\nMagtiwala at sumunod;\nWalang ibang paraan upang maging masaya\nKundi magtiwala at sumunod.\n\n2 Hindi ko maintindihan ang lahat\nNg kagustuhan ng Dios;\nNgunit magtitiwala ako sa Kanya\nAt susunod sa Kanyang mga utos."
     },
     {
-      "id": "180",
+      "id": "181",
       "collection": "awit",
       "title": "HESUS KONG MINAMAHAL",
       "english_tune": "Lord Jesus, I Love Thee",
@@ -1981,7 +1992,7 @@
       "text": "1 Hesus kong minamahal,\nSa lahat ng lahat;\nLabat ng aking puso\nAy para sa Iyo.\n\n2 Hesus kong minamahal,\nAng Iyong biyaya ay dakila;\nAng Iyong pag-ibig ay walang hanggan\nAt hindi mababago."
     },
     {
-      "id": "181",
+      "id": "182",
       "collection": "awit",
       "title": "AKA'Y PAKAIBIGAN",
       "english_tune": "Thee Will I Love, My Strength, My Tower",
@@ -1992,7 +2003,7 @@
       "text": "1 Ika'y pakaibigan,\nO Hesus aking Panginoon;\nO lubusin Mong Iyong magawin\nAng puso kong nag-aalalay.\n\n2 Ika'y pakaibigan,\nAng Iyong biyaya ay sapat;\nAng Iyong pag-ibig ay walang hanggan\nAt hindi mababago."
     },
     {
-      "id": "182",
+      "id": "183",
       "collection": "awit",
       "title": "HESUS, PAG-IBIG MO",
       "english_tune": "Jesus, Thy Boundless Love to Me",
@@ -2003,7 +2014,7 @@
       "text": "1 Hesus, pag-ibig Mo\nAy walang katulad;\nLabat ng aking puso\nAy para sa Iyo.\n\n2 Hesus, pag-ibig Mo\nAy nagbibigay ng lakas;\nAng Iyong biyaya ay sapat\nAt ang Iyong pag-ibig ay wagas."
     },
     {
-      "id": "183",
+      "id": "184",
       "collection": "awit",
       "title": "PAG-IBIG NA KUMAKAPIT SA AKIN",
       "english_tune": "Love That Will Not Let Me Go",
@@ -2014,7 +2025,7 @@
       "text": "1 Pag-ibig na kumakapit sa akin,\nAko ay nagpapahinga sa Iyo;\nAng aking pagod na puso\nAy nagpapahinga sa Iyo.\n\n2 Liwanag na sumusunod sa akin,\nAko ay nagreresign sa Iyo;\nKahit ang aking landas ay madilim\nAng liwanag ay kasama ko.\n\n3 Kagalakan na naghahanap sa akin,\nAko ay nagbibigay ng aking puso;\nAt ang dugo ng puso ko\nAy nagpapahinga sa Iyo.\n\n4 Krus na itinaas para sa akin,\nAko ay sumusuko;\nAt ang glorya mula sa aking buhay\nAy mas mayaman magpakailanman."
     },
     {
-      "id": "184",
+      "id": "185",
       "collection": "awit",
       "title": "DAKONG TAHIMIK",
       "english_tune": "Quiet Place of Rest",
@@ -2025,7 +2036,7 @@
       "text": "1 May dakong tahimik\nNa puno ng kapayapaan;\nSi Hesus ay kasama doon\nAt ang kaluluwa ay nagpapahinga.\n\n2 May dakong tahimik\nNa puno ng biyaya;\nSi Hesus ay kasama doon\nAt ang kaluluwa ay nagpapahinga."
     },
     {
-      "id": "185",
+      "id": "186",
       "collection": "awit",
       "title": "PAG-IBIG KO, HESUS, SA KAMALIKA",
       "english_tune": "More Love to Thee, O Christ",
@@ -2036,7 +2047,7 @@
       "text": "1 Pag-ibig ko, Hesus, sa kamalika,\nPag-ibig ko sa Iyo;\nNa ito ay awit ko\nDoon sa Iyong trono.\n\n2 Pag-ibig ko, Hesus, sa kamalika,\nPag-ibig ko sa Iyo;\nAng aking puso at buhay\nAy para sa Iyo."
     },
     {
-      "id": "186",
+      "id": "187",
       "collection": "awit",
       "title": "MASUNOD KO NAWA",
       "english_tune": "O Jesus, I Have Promised",
@@ -2047,7 +2058,7 @@
       "text": "1 Masunod ko nawa,\nO Hesus, Panginoon;\nAng Iyong mga utos\nAt ang Iyong mga landas.\n\n2 Masunod ko nawa,\nSa lahat ng aking buhay;\nAng Iyong mga utos\nAt ang Iyong mga landas."
     },
     {
-      "id": "187",
+      "id": "188",
       "collection": "awit",
       "title": "O DIOS, KAKAILANGAN MO",
       "english_tune": "O God of Love, O King of Peace",
@@ -2058,7 +2069,7 @@
       "text": "1 O Dios, kakailangan Mo\nSa aming buhay;\nAng Iyong biyaya ay sapat\nAt ang Iyong pag-ibig ay wagas.\n\n2 O Dios, kakailangan Mo\nSa aming mga panalangin;\nAng Iyong presensya ay kasama\nAt ang Iyong kapangyarihan ay dakila."
     },
     {
-      "id": "188",
+      "id": "189",
       "collection": "awit",
       "title": "AKING MGA KAMAY",
       "english_tune": "Take My Life and Let It Be",
@@ -2069,7 +2080,7 @@
       "text": "1 Aking mga kamay, O Panginoon,\nIkaw ang gumamit sa akin;\nAng aking buhay, lahat ng araw\nAy para sa Iyong kaluwalhatian.\n\n2 Ang aking mga paa, O Panginoon,\nIkaw ang gumamit sa akin;\nAng aking buhay, lahat ng araw\nAy para sa Iyong kaluwalhatian.\n\n3 Ang aking puso, O Panginoon,\nIkaw ang maghari doon;\nAng aking buhay, lahat ng araw\nAy para sa Iyong kaluwalhatian."
     },
     {
-      "id": "189",
+      "id": "190",
       "collection": "awit",
       "title": "ESPIRITU BANAL SUMAAMIN",
       "english_tune": "Spirit of God Descend",
@@ -2080,7 +2091,7 @@
       "text": "1 Espiritu banal sumaamin,\nAt punan ang aming puso;\nAng Iyong kapangyarihan ay dumating\nAt ang aming buhay ay magbago.\n\n2 Espiritu banal sumaamin,\nAt gabayan ang aming buhay;\nAng Iyong kapangyarihan ay dumating\nAt ang aming puso ay malinis."
     },
     {
-      "id": "190",
+      "id": "191",
       "collection": "awit",
       "title": "WALANG IBANG KABIGATAN",
       "english_tune": "No Other Plea",
@@ -2091,7 +2102,7 @@
       "text": "1 Walang ibang kabigatan,\nKundi ang salita ng Dios;\nAng aking pananampalataya\nAy nakabatay sa Kanyang salita.\n\n2 Walang ibang kabigatan,\nKundi ang pag-ibig ni Hesus;\nAng aking buhay ay nakabatay\nSa Kanyang pagmamahal."
     },
     {
-      "id": "191",
+      "id": "192",
       "collection": "awit",
       "title": "HESUS LANG ANG SAPAT",
       "english_tune": "Jesus Is All the World to Me",
@@ -2102,7 +2113,7 @@
       "text": "1 Hesus lang ang sapat\nSa aking buhay;\nSiya ang aking lakas\nAt ang aking pag-asa.\n\n2 Hesus lang ang sapat\nSa lahat ng aking pangangailangan;\nSiya ang aking tagapagligtas\nAt ang aking kaibigan."
     },
     {
-      "id": "192",
+      "id": "193",
       "collection": "awit",
       "title": "KALOOBAN MO, DIOS, AY SUNDIN",
       "english_tune": "Thy Will Be Done",
@@ -2113,7 +2124,7 @@
       "text": "1 Kalooban Mo, Dios, ay sundin,\nLabat ng oras;\nAng Iyong kagustuhan ay aking gagawin\nSa lahat ng aking buhay.\n\n2 Kalooban Mo, Dios, ay sundin,\nSa lahat ng pagsubok;\nAng Iyong gabay ay aking hihintayin\nAt ang Iyong kalooban ay aking susundin."
     },
     {
-      "id": "193",
+      "id": "194",
       "collection": "awit",
       "title": "ITURO MO SA'KIN",
       "english_tune": "Teach Me Thy Way, O Lord",
@@ -2124,7 +2135,7 @@
       "text": "1 Ituro Mo sa'kin,\nO Panginoon;\nAng Iyong daan\nAt ang Iyong kalooban.\n\n2 Ituro Mo sa'kin,\nSa lahat ng aking buhay;\nAng Iyong daan\nAt ang Iyong kagustuhan.\n\n3 Tayo'y kalooban\nO Panginoon, turan Mo ako;\nSa unos mananatil lahat\nAt ang buhay ko.\n\n4 Taklo Mo'y pahinalakin,\nAt alam Mo, Panginoon;\nAt sa buhay ay mananatili\nAng buhay ko."
     },
     {
-      "id": "194",
+      "id": "195",
       "collection": "awit",
       "title": "HIGIT PA SA KABUTIHAN",
       "english_tune": "More Than Wonderful",
@@ -2135,7 +2146,7 @@
       "text": "1 Higit pa sa kabutihan\nAng pangako ng Dios;\nHigit pa sa lahat ng mabuti\nAng Kanyang pag-ibig.\n\n2 Higit pa sa kabutihan\nAy si Hesus Kristong Panginoon;\nHigit pa sa lahat ng mabuti\nAy ang Kanyang biyaya."
     },
     {
-      "id": "195",
+      "id": "196",
       "collection": "awit",
       "title": "PAG-IBIG KO, HESUS, SA AKIN",
       "english_tune": "More Love to Thee",
@@ -2146,7 +2157,7 @@
       "text": "1 Pag-ibig ko, Hesus, sa akin,\nPag-ibig ko sa Iyo;\nNa ito ay awit ko\nDoon sa Iyong trono.\n\nRefrain:\nPag-ibig ko, Hesus, sa Iyo;\nPag-ibig ko sa Iyo;\nLabat ng aking puso at buhay\nAy para sa Iyo."
     },
     {
-      "id": "196",
+      "id": "197",
       "collection": "awit",
       "title": "MASUNOD KO NAWA",
       "english_tune": "Following Jesus",
@@ -2157,7 +2168,7 @@
       "text": "1 Masunod ko nawa\nSi Hesus araw-araw;\nSa bawat hakbang ng aking buhay\nAy si Hesus ang kasama ko.\n\n2 Masunod ko nawa\nSi Hesus sa lahat;\nSa lahat ng aking gawain\nAy si Hesus ang Hari."
     },
     {
-      "id": "197",
+      "id": "198",
       "collection": "awit",
       "title": "ALAY SA PAGLILINGKOD",
       "english_tune": "Willing to Serve",
@@ -2168,7 +2179,7 @@
       "text": "1 Alay sa paglilingkod\nNg Panginoon;\nAng aming buhay ay inihahandog\nPara sa Kanyang kaluwalhatian.\n\n2 Alay sa paglilingkod\nNg Panginoon;\nAng aming lahat ay ibinibigay\nPara sa Kanyang Iglesia."
     },
     {
-      "id": "198",
+      "id": "199",
       "collection": "awit",
       "title": "LUMAKAD KA SA LIWANAG",
       "english_tune": "Walk in the Light",
@@ -2179,7 +2190,7 @@
       "text": "1 Lumakad ka sa liwanag,\nNg Panginoong nagbibigay;\nAng landas ng buhay ay maliwanag\nPara sa mga sumusunod sa Kanya.\n\n2 Lumakad ka sa liwanag,\nNg Panginoong nagmamahal;\nAng Kanyang liwanag ay gabay mo\nSa lahat ng iyong buhay."
     },
     {
-      "id": "199",
+      "id": "200",
       "collection": "awit",
       "title": "SI HESUS AY TUMATAWAG NGAYON",
       "english_tune": "Jesus Calls Us O'er the Tumult",
@@ -2190,7 +2201,7 @@
       "text": "1 Si Hesus ay tumatawag ngayon,\nSa gitna ng mga alon;\nSumusunod ka ba sa Kanya?\nAng Kanyang tinig ay marinig mo.\n\n2 Si Hesus ay tumatawag ngayon,\nSa lahat ng tao;\nSumusunod ka ba sa Kanya?\nAng Kanyang biyaya ay para sa iyo."
     },
     {
-      "id": "200",
+      "id": "201",
       "collection": "awit",
       "title": "KUNG TAYO AY MALAYO MUNG MAWAY",
       "english_tune": "When We Walk with the Lord",
@@ -2201,7 +2212,7 @@
       "text": "1 Kung tayo ay malayo Mong maway,\nO Panginoon naming Hari;\nAng Iyong mga pangako ay tapat\nAt ang Iyong biyaya ay walang hanggan.\n\nRefrain:\nMagtiwala at sumunod,\nMagtiwala at sumunod;\nWalang ibang paraan upang maging masaya\nKundi magtiwala at sumunod.\n\n2 Hindi lahat ng aking naiintindihan\nAng kagustuhan ng Dios;\nNgunit magtitiwala ako sa Kanya\nAt susunod sa Kanyang mga utos."
     },
     {
-      "id": "201",
+      "id": "202",
       "collection": "awit",
       "title": "ILAY SA PANGINOON",
       "english_tune": "Leave It There",
@@ -2212,7 +2223,7 @@
       "text": "1 Ilay sa Panginoon,\nAng lahat ng iyong pasan;\nSiya ay handang tumanggap\nAt magbigay ng kapahingahan.\n\n2 Ilay sa Panginoon,\nAng lahat ng iyong alalahanin;\nSiya ay handang tulungan\nAt magbigay ng kapayapaan."
     },
     {
-      "id": "202",
+      "id": "203",
       "collection": "awit",
       "title": "DAKILANG DIOS AKO'Y KAUSAPIN",
       "english_tune": "God, Speak to Me",
@@ -2223,7 +2234,7 @@
       "text": "1 Dakilang Dios ako'y kausapin,\nSa pamamagitan ng Iyong salita;\nAng Iyong tinig ay marinig ko\nAt ang Iyong kalooban ay aking susundin.\n\n2 Dakilang Dios ako'y kausapin,\nSa pamamagitan ng Iyong Espiritu;\nAng Iyong kalooban ay aking gagawin\nAt ang Iyong mga utos ay aking susundin."
     },
     {
-      "id": "203",
+      "id": "204",
       "collection": "awit",
       "title": "TURUAN MO KAMI",
       "english_tune": "Lord, Teach Us How to Pray",
@@ -2234,7 +2245,7 @@
       "text": "1 Turuan Mo kami,\nO Panginoon;\nKung paano manalangin\nAt ang Iyong kalooban ay hanapin.\n\n2 Turuan Mo kami,\nSa lahat ng oras;\nKung paano manalangin\nAt ang Iyong presensya ay hanapin."
     },
     {
-      "id": "204",
+      "id": "205",
       "collection": "awit",
       "title": "O HESUS INALAYAN",
       "english_tune": "O Jesus, I Have Promised",
@@ -2245,7 +2256,7 @@
       "text": "1 O Hesus inalayan,\nMaging Panginoon;\nSia ng aking puso't buhay\nAt ng aking kaluluwa.\n\n2 O Hesus inalayan,\nIkaw ang aking lakas;\nSia ng aking puso't buhay\nAt ng aking kaluluwa.\n\n3 Ngayo'y initilap tayo\nSa 'Yo'y nagsisambal;\nSia ng aming puso't buhay\nAt ng aming kaluluwa.\n\n4 Lahat ng aming kababawan\nAy Sa 'Yo'y nagsisambal;\nSia ng aming puso't buhay\nAt ng aming kaluluwa."
     },
     {
-      "id": "205",
+      "id": "206",
       "collection": "awit",
       "title": "BUHAY KO'Y 'YONG KUNIN",
       "english_tune": "Living for Jesus",
@@ -2256,7 +2267,7 @@
       "text": "1 Buhay ko'y 'Yong kunin,\nPanginoon ko'y Ikaw;\nLabat ng aking gawain\nAy para sa Iyo.\n\n2 Buhay ko'y 'Yong kunin,\nAt gamitin para sa Iyo;\nLabat ng aking lakas\nAy para sa Iyong kaluwalhatian."
     },
     {
-      "id": "206",
+      "id": "207",
       "collection": "awit",
       "title": "NAGPAPASALAMAT AKO",
       "english_tune": "Father, We Thank Thee",
@@ -2267,7 +2278,7 @@
       "text": "1 Nagpapasalamat ako,\nO Dios at Ama ko;\nSa lahat ng Iyong biyaya\nAt sa lahat ng Iyong pagmamahal.\n\n2 Nagpapasalamat ako,\nSa lahat ng oras;\nSa lahat ng Iyong ginawa\nAt sa lahat ng Iyong biyaya."
     },
     {
-      "id": "207",
+      "id": "208",
       "collection": "awit",
       "title": "AY SA PANGINOON",
       "english_tune": "To the Lord Be the Glory",
@@ -2278,7 +2289,7 @@
       "text": "1 Ay sa Panginoon\nAng lahat ng kaluwalhatian;\nAng Kanyang pangalan ay dakila\nAt hindi mababago.\n\n2 Ay sa Panginoon\nAng lahat ng papuri;\nAng Kanyang biyaya ay walang hanggan\nAt hindi mababago."
     },
     {
-      "id": "208",
+      "id": "209",
       "collection": "awit",
       "title": "HINDI NA AKO MAG-IISA",
       "english_tune": "Never Alone",
@@ -2289,7 +2300,7 @@
       "text": "1 Hindi na ako mag-iisa,\nSi Hesus ay kasama ko;\nSa lahat ng aking buhay\nSiya ay kasama ko.\n\n2 Hindi na ako mag-iisa,\nSa lahat ng pagsubok;\nSi Hesus ay kasama ko\nAt Siya ay hindi makakaalis."
     },
     {
-      "id": "209",
+      "id": "210",
       "collection": "awit",
       "title": "TANGING KAY KRISTO",
       "english_tune": "Only Jesus",
@@ -2300,7 +2311,7 @@
       "text": "1 Tanging kay Kristo\nAng aking pag-asa;\nAng Kanyang dugo ay naghugas\nSa lahat ng aking kasalanan.\n\n2 Tanging kay Kristo\nAng aking lakas;\nAng Kanyang biyaya ay sapat\nAt ang Kanyang pag-ibig ay wagas."
     },
     {
-      "id": "210",
+      "id": "211",
       "collection": "awit",
       "title": "KALAKASAN MAKONG NALILINGKOD",
       "english_tune": "The Service of the King",
@@ -2311,7 +2322,7 @@
       "text": "1 Kalakasan makon nalilingkod\nSa Hari ng lahat;\nAng Kanyang kaharian ay walang hanggan\nAt Siya ay magtatagumpay.\n\n2 Kalakasan makon nalilingkod\nSa Panginoon ng lahat;\nAng Kanyang biyaya ay sapat\nAt ang Kanyang pag-ibig ay wagas."
     },
     {
-      "id": "211",
+      "id": "212",
       "collection": "awit",
       "title": "AKO BA'Y KAWAL NG KRUS",
       "english_tune": "Am I a Soldier of the Cross",
@@ -2322,7 +2333,7 @@
       "text": "1 Ako ba'y kawal ng krus,\nSundalong ni Hesus;\nAt matatakot ba akong magtayo\nPara sa Kanyang pangalan?\n\n2 Dapat ba akong dala-dalhin\nNa parang mga bulaklak;\nHabang iba ay nakikipaglaban\nSa dagat at sa apoy?\n\n3 Dapat ba akong maging mahinahon,\nAt makikita sa agos ng buhay;\nHabang si Hesus ay nagbigay\nNg Kanyang dugo para sa akin?\n\n4 Hindi! Dapat akong lumaban\nKung nais kong magtagumpay;\nDapat akong magdala ng krus\nAt sumunod sa Kanya."
     },
     {
-      "id": "212",
+      "id": "213",
       "collection": "awit",
       "title": "IKAKAYO BA?",
       "english_tune": "Is It Well with My Soul",
@@ -2333,7 +2344,7 @@
       "text": "1 Pag-asa ko ay kay Hesus,\nAt sa Kanyang mga tagumpay;\nNa ang aking kasalanan ay pinatawad\nAt ang aking kaluluwa ay malaya.\n\nRefrain:\nIkakayo ba? Ikakayo ba?\nIkakayo ba sa iyong kaluluwa?\nIkakayo ba? Ikakayo ba?\nIkakayo ba sa iyong kaluluwa?\n\n2 Kahit ang buhay ay puno ng kalungkutan\nAt ang dagat ay maalon;\nAng aking puso ay sumasayaw\nDahil si Hesus ay kasama ko."
     },
     {
-      "id": "213",
+      "id": "214",
       "collection": "awit",
       "title": "MGA KASALANA'Y TATANGAPIN",
       "english_tune": "Christ Receiveth Sinful Man",
@@ -2344,7 +2355,7 @@
       "text": "1 Ika'y makasamang tatangapin\nNi Hesus na ating Tagapagligtas;\nAng Kanyang pag-ibig ay walang hanggan\nAt hindi mababago.\n\n2 Pumarito ka kay Hesus ngayon\nAt huwag nang mag-antay pa;\nAng Kanyang biyaya ay sapat\nAt ang Kanyang pag-ibig ay wagas."
     },
     {
-      "id": "214",
+      "id": "215",
       "collection": "awit",
       "title": "TAGAPAGTANGGOL AKO'Y MAY",
       "english_tune": "A Sovereign Protector I Have",
@@ -2355,7 +2366,7 @@
       "text": "1 Tagapagtanggol ako'y may\nNa Dios ng aking kaligtasan;\nAng Kanyang kapangyarihan ay sapat\nAt ang Kanyang pag-ibig ay wagas.\n\n2 Ang Dios ay aking tagapagtanggol\nSa lahat ng pagsubok;\nAng Kanyang lakas ay sapat\nAt ang Kanyang biyaya ay walang hanggan."
     },
     {
-      "id": "215",
+      "id": "216",
       "collection": "awit",
       "title": "TUNAY NA ISANG MANANAKOP",
       "english_tune": "A Wonderful Savior Is Jesus My Lord",
@@ -2366,7 +2377,7 @@
       "text": "1 Tunay na isang Mananakop\nSi Hesus ang aking Panginoon;\nSiya ang nagtatago sa akin\nSa Kanyang makapangyarihang kamay.\n\nRefrain:\nIsang manapakop! Isang manapakop!\nKaming lahat ay sakop Niya;\nIsang manapakop! Isang manapakop!\nAng aming lakas at pag-asa.\n\n2 Tunay na isang Mananakop\nSi Hesus ang aming Tagapagligtas;\nSiya ang nagbibigay ng kapayapaan\nAt ng biyaya sa lahat."
     },
     {
-      "id": "216",
+      "id": "217",
       "collection": "awit",
       "title": "SI HESUS ANG S'YANG PATNUBAY",
       "english_tune": "All the Way My Savior Leads Me",
@@ -2377,7 +2388,7 @@
       "text": "1 Si Hesus ang S'yang patnubay\nSa lahat ng aking buhay;\nSa bawat landas ay kasama ko\nAt Kanyang ginagabayan.\n\n2 Si Hesus ang S'yang patnubay\nSa lahat ng aking pangangailangan;\nSa bawat pagsubok ay kasama ko\nAt Kanyang ginagabayan."
     },
     {
-      "id": "217",
+      "id": "218",
       "collection": "awit",
       "title": "SI KRISTO ANG KASAMA'KO PATNUBAY",
       "english_tune": "Face to Face with Christ My Savior",
@@ -2388,7 +2399,7 @@
       "text": "1 Si Kristo ang kasama'ko patnubay,\nBawa hakbang I take si Hesus;\nHanggang matapos ang aking buhay\nSiya ay kasama ko.\n\n2 Balang araw ay makikita ko\nSi Hesus nang harapan;\nAng Kanyang mukha ay makikita ko\nAt magagalak ang aking puso."
     },
     {
-      "id": "218",
+      "id": "219",
       "collection": "awit",
       "title": "KUNG KASAMA SI HESUS",
       "english_tune": "Walking with Jesus",
@@ -2399,7 +2410,7 @@
       "text": "1 Kung kasama si Hesus\nSa lahat ng daan;\nAng aking buhay ay puno ng biyaya\nAt ng kapayapaan.\n\n2 Kung kasama si Hesus\nSa lahat ng pagsubok;\nAng Kanyang lakas ay sapat\nAt ang Kanyang biyaya ay walang hanggan."
     },
     {
-      "id": "219",
+      "id": "220",
       "collection": "awit",
       "title": "PANGINOON, MAHABAG KA",
       "english_tune": "Lord, Have Mercy on Me",
@@ -2410,7 +2421,7 @@
       "text": "1 Panginoon, mahabag Ka\nSa aking mga kasalanan;\nAng Iyong biyaya ay sapat\nAt ang Iyong pagmamahal ay walang hanggan.\n\n2 Panginoon, mahabag Ka\nSa aking kahinaan;\nAng Iyong lakas ay sapat\nAt ang Iyong biyaya ay walang hanggan."
     },
     {
-      "id": "220",
+      "id": "221",
       "collection": "awit",
       "title": "PANGINOON, NAGTITIWALA",
       "english_tune": "Lord, I Trust Thee",
@@ -2421,7 +2432,7 @@
       "text": "1 Panginoon, nagtitiwala\nAko sa Iyo;\nLabat ng aking buhay\nAy sa Iyong mga kamay.\n\n2 Panginoon, nagtitiwala\nSa Iyong mga pangako;\nLabat ng aking pangangailangan\nAy sa Iyo ko inaalay."
     },
     {
-      "id": "221",
+      "id": "222",
       "collection": "awit",
       "title": "AKING AMA, ILAPIT AKO",
       "english_tune": "Lead Us Heavenly Father",
@@ -2432,7 +2443,7 @@
       "text": "1 Aking Ama, ilapit ako\nSa Iyong mga paa;\nAng aking puso ay naghahanap\nNg Iyong presensya.\n\n2 Aking Ama, ilapit ako\nSa Iyong mga kamay;\nAng aking buhay ay inihahandog\nSa Iyong kaluwalhatian."
     },
     {
-      "id": "222",
+      "id": "223",
       "collection": "awit",
       "title": "SA ILIM NG 'YONG KRUS",
       "english_tune": "Beneath the Cross of Jesus",
@@ -2443,7 +2454,7 @@
       "text": "1 Sa ilim ng 'Yong krus,\nAko ay nagpapahinga;\nSa lilim ng malaking bato\nNa sa tuyong lupa.\n\n2 Sa ilim ng 'Yong krus,\nAng aking puso ay nagpapahinga;\nSa Iyong pag-ibig ay ligtas ako\nAt ang aking kaluluwa ay natagpuan ang kapayapaan."
     },
     {
-      "id": "223",
+      "id": "224",
       "collection": "awit",
       "title": "O JEHOVA, PATNUBAYAN",
       "english_tune": "O Jehovah, Guide Me",
@@ -2454,7 +2465,7 @@
       "text": "1 O Jehova, patnubayan\nMo ang aming buhay;\nAng Iyong mga landas ay aming susundin\nAt ang Iyong kalooban ay aming gagawin.\n\n2 O Jehova, patnubayan\nMo ang aming mga paa;\nSa lahat ng pagsubok ay kasama Mo kami\nAt ang Iyong biyaya ay sapat.\n\n3 Sa idinagdag ang aking pananampalataya,\nNa ng magsilang sa ilog Jordan;\nAko ay 'Yong kasama\nAt ang buhay ko.\n\n4 Pagtatago at aking saan,\nNa ng magsilang sa ilog Jordan;\nAt sila ay 'Yong kasama\nAt ang buhay ko."
     },
     {
-      "id": "224",
+      "id": "225",
       "collection": "awit",
       "title": "HESUS, PAKIGABAYAN",
       "english_tune": "Jesus, Savior, Pilot Me",
@@ -2465,7 +2476,7 @@
       "text": "1 Hesus, pakigabayan\nAng aking buhay;\nSa dagat ng buhay ay gabayan Mo ako\nSa ligtas na lugar.\n\n2 Hesus, pakigabayan\nSa lahat ng pagsubok;\nSa dagat ng buhay ay gabayan Mo ako\nAt ang Iyong biyaya ay sapat."
     },
     {
-      "id": "225",
+      "id": "226",
       "collection": "awit",
       "title": "O HESUS, 'YONG UGITAN",
       "english_tune": "Jesus, Savior, Steer My Vessel",
@@ -2476,7 +2487,7 @@
       "text": "1 O Hesus, 'Yong ugitan\nAng aking buhay;\nSa dagat ng buhay ay ugitan Mo ako\nSa ligtas na daungan.\n\n2 Kung ang alon ay mataas\nAt ang hangin ay malakas;\nSi Hesus ang aking gabay\nAt Siya ay kasama ko."
     },
     {
-      "id": "226",
+      "id": "227",
       "collection": "awit",
       "title": "O DIOS SAMAHAN MO AKO",
       "english_tune": "O God, Be with Me",
@@ -2487,7 +2498,7 @@
       "text": "1 O Dips, samahan Mo ako,\nSa aking pag-awit;\nNa uminabot ang tunog ng papuri\nHanggang sa langit.\n\n2 Nagtutunlad, nagtutunlad,\nNagtutunlad ako sa 'Yo;\nO nagtutunlad ako sa 'Yo.\n\n3 Sa piling Mo ay walang lunos\nNa kasalanan na di napatawad;\nAng Iyong biyaya ay walang hanggan\nAt hindi mababago.\n\n4 Dips ng ipagtanggol Mo\nAng tipon ng Iyong bayan;\nAng Dips tayo ay kayumukso\nNg mga katulungan."
     },
     {
-      "id": "227",
+      "id": "228",
       "collection": "awit",
       "title": "SI HESUS BA'AY DUMARATING",
       "english_tune": "Does Jesus Care",
@@ -2498,7 +2509,7 @@
       "text": "1 Si Hesus ba'ay dumarating\nNang aking mga pagsubok?\nOo, Siya ay nagmamahal\nAt Siya ay kasama ko.\n\nRefrain:\nOo, Siya ay nagmamahal,\nOo, Siya ay nagmamahal;\nSi Hesus ay nagmamahal sa akin\nAt Siya ay kasama ko.\n\n2 Si Hesus ba'ay dumarating\nNang aking mga kalungkutan?\nOo, Siya ay nagmamahal\nAt Siya ay kasama ko."
     },
     {
-      "id": "228",
+      "id": "229",
       "collection": "awit",
       "title": "SI KRISTONG MANGAGAMOT",
       "english_tune": "Jesus the Great Physician",
@@ -2509,7 +2520,7 @@
       "text": "1 Si Kristong Mangagamot\nAy dumarating sa mga may sakit;\nAng Kanyang biyaya ay sapat\nAt ang Kanyang pag-ibig ay wagas.\n\n2 Si Kristong Mangagamot\nAy nagpapagaling ng mga nasugatan;\nAng Kanyang kapangyarihan ay dakila\nAt hindi mababago."
     },
     {
-      "id": "229",
+      "id": "230",
       "collection": "awit",
       "title": "SI HESUS ANG NAGLILIGTAS",
       "english_tune": "Jesus Saves",
@@ -2520,7 +2531,7 @@
       "text": "1 Si Hesus ang nagliligtas!\nIpahayag ang balita;\nSa lahat ng tao ay ipahayag\nNa si Hesus ay nagliligtas!\n\n2 Sa lahat ng sulok ng mundo\nAy ipahayag ang Kanyang pangalan;\nSi Hesus ang nagliligtas\nAt ang Kanyang biyaya ay dakila."
     },
     {
-      "id": "230",
+      "id": "231",
       "collection": "awit",
       "title": "PASANIN MO'Y DALHIN KAY KRISTO",
       "english_tune": "Burdens Are Lifted at Calvary",
@@ -2531,7 +2542,7 @@
       "text": "1 Pasanin mo'y dalhin kay Kristo,\nAy Sa Kanyang mga kamay;\nMay dusa ka ba't paghihirap,\nDalhin kay Hesus Kristo.\n\nRefrain:\nPasanin, pasanin,\nDalhin kay Hesus Kristo;\nPasanin, pasanin,\nDalhin kay Hesus Kristo.\n\n2 Buhay mo'y tipun-tipon,\nMay dusa ka ba't paghihirap;\nDalhin kay Hesus Kristo\nAt Siya ay magtatagumpay.\n\n3 Lahat ng iyong alay,\nNa aking sala ko'y walang maliit;\nAt kung pag-asa ko'y palayain Mo\nAt sa buhay ay mananatili."
     },
     {
-      "id": "231",
+      "id": "232",
       "collection": "awit",
       "title": "NGALAN NI HESUS INGATAN",
       "english_tune": "In the Name of Jesus with You",
@@ -2542,7 +2553,7 @@
       "text": "1 Ngalan ni Hesus ingatan,\nSa lahat ng oras;\nSa Kanya'y manalig\nAt sumunod sa Kanya.\n\n2 Ngalan ni Hesus ay kapangyarihan,\nSa lahat ng oras;\nSa Kanya'y magpuri\nAt purihin ang Kanyang pangalan."
     },
     {
-      "id": "232",
+      "id": "233",
       "collection": "awit",
       "title": "PAGPAPALA'Y AY BILANGIN",
       "english_tune": "Count Your Blessings",
@@ -2553,7 +2564,7 @@
       "text": "1 Kung bagyo ng buhay\nMo ay mukhang mabigat;\nKung ang kalungkutan\nMo ay mukhang malalim;\nBilangin ang mga pagpapala ng Dios\nAt makikita mo ang biyaya Niya.\n\nRefrain:\nBilangin ang mga pagpapala,\nBilangin ang mga pagpapala;\nBilangin ang mga pagpapala ng Dios\nAt makikita mo ang biyaya Niya.\n\n2 Ang iyong mga pagpapala\nAy hindi mabibilang;\nAng biyaya ng Dios ay walang hanggan\nAt hindi mababago."
     },
     {
-      "id": "233",
+      "id": "234",
       "collection": "awit",
       "title": "BAKIT AKO'Y MAY LUNOS",
       "english_tune": "Why Should I Feel Discouraged",
@@ -2564,7 +2575,7 @@
       "text": "1 Bakit ako'y may lunos,\nBakit ang alon ay mataas;\nSi Hesus ay kasama ko\nAt Siya ay hindi makakaalis.\n\nRefrain:\nMag-awit ako, mag-awit ako,\nMag-awit at purihin ang Dios;\nMag-awit ako, mag-awit ako,\nPurihin ang Panginoon.\n\n2 Bakit ako'y mababago,\nBakit ang puso ay mabigat;\nSi Hesus ay kasama ko\nAt Siya ay laging nagmamahal."
     },
     {
-      "id": "234",
+      "id": "235",
       "collection": "awit",
       "title": "HESUS, KASAMA KO",
       "english_tune": "Jesus with Me",
@@ -2575,7 +2586,7 @@
       "text": "1 Hesus, kasama ko\nSa lahat ng daan;\nAng Kanyang presensya ay kasama ko\nAt Siya ay laging nagmamahal.\n\n2 Hesus, kasama ko\nSa lahat ng pagsubok;\nAng Kanyang lakas ay sapat\nAt ang Kanyang biyaya ay walang hanggan."
     },
     {
-      "id": "235",
+      "id": "236",
       "collection": "awit",
       "title": "LUMAPIT SA AKIN",
       "english_tune": "Draw Me Nearer",
@@ -2584,17 +2595,6 @@
       "midi_collection": null,
       "midi_id": null,
       "text": "1 Lumapit sa akin,\nO Hesus;\nAng aking puso ay naghahanap\nNg Iyong presensya.\n\n2 Lumapit sa akin,\nO Hesus;\nAng aking kaluluwa ay naghahanap\nNg Iyong pagmamahal."
-    },
-    {
-      "id": "236",
-      "collection": "awit",
-      "title": "KAPAG SINAPIT DAKLING ARAW",
-      "english_tune": "Beyond the Sunset",
-      "section": "Pag-lingat at Kamatayan",
-      "firstLine": "Kapag sinapit dakling araw,",
-      "midi_collection": null,
-      "midi_id": null,
-      "text": "1 Sa bandang napalayo\nNa pag magtapos na\nIlong pang mapipiling\nIlong pang mananarating;\nSa Hesus mananatili\nAt sa Kanya magtatagal.\n\n2 Sa araw na iyon\nNa tayo ay masisalak;\nAng kaluwalhatian ng Dios\nAy makikita natin.\n\n3 Pag ang araw ay lumubog\nAt ang gabi ay dumating;\nSi Hesus ay kasama ko\nAt Siya ay laging nagmamahal.\n\n4 Habang ang buhay\nAy panandalian;\nLabas ang araw na iyon\nNa tayo ay masisalak."
     },
     {
       "id": "237",
