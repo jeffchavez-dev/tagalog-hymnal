@@ -1,4 +1,4 @@
-var CACHE = 'awit-v1';
+var CACHE = 'awit-v2';
 var ASSETS = [
   '.',
   'index.html',
